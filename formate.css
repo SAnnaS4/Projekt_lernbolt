@@ -4,15 +4,32 @@ body {
 	color: #FFF;
 	max-width: 70em;
 	margin: 1em auto;
-	background: black;
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+#Mathe {
+		background:url("Mathematics Background.jpg");
+}
+
+#Start {
+		background:url("StartseiteBackground.jpeg") no-repeat center center;
+}
+
+#Musik {
+		background:url("Music Violine Background.jpg") no-repeat right top;
 }
 
 header {
 	position: relative;
-	color: #FFF;
-	background: #580E0E;
 	padding: .6em;
 	padding-left: 8em;
+}
+
+/*allgemeines Design*/
+.aD {
+	background-color:rgba(0,255,0,0.5);
+	color:white;
 }
 
 header img {
@@ -38,15 +55,12 @@ h1 {
 }
 
 nav {
-	float: left;
-	width: 8.5em;
+	float: top;
+	width: 1;
 	list-style-type: none;
-	padding: 3.5em 0 1em 1em;
+	padding: 1 em 0 35em 1em;
 	margin: .5em;
 	z-index: 0;
-	background: #BAB37B;
-	border-top-left-radius: .5em;
-	border-bottom-left-radius: .5em;
 }
 
 ol		{
@@ -65,10 +79,8 @@ main {
 	
 	margin: .5em 0;
 	margin-left: 10em;
-	background: #580E0E;
 	padding: .1em .5em;
 	min-height: 15em;
-	color: #BAB58C;
 }
 
 table {
@@ -121,10 +133,8 @@ article {
 	}
 
 footer {
-	background: #580E0E;
-	color: #FFF;
+
 	margin: .5em 0;
-	text-align: right;
 	font-size: .8em;
 	padding: .5em;
 }
@@ -133,17 +143,14 @@ a {
 	text-decoration: none;
 	color: #FFF;
 	font-weight: bold;
+	background-color:rgba(0,255,0,0);
 }
 
 nav a {
-	display: block;
-	color: #000;
+	display: inline;
 	text-decoration: none;
-	background: #BAB37B;
 	padding: .5em .4em;
-	border-top-left-radius: .5em;
-	border-bottom-left-radius: .5em;
-	margin: 0 0 0 0;
+	margin-right:20em;
 }
 
 nav a:focus {
@@ -154,6 +161,7 @@ nav a:focus {
 nav a:hover {
 	background: #580E0E;
 	color: #BAB58C;
+
 }
 
 nav a:active,
