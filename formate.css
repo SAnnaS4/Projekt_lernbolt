@@ -28,7 +28,7 @@ header {
 
 /*allgemeines Design*/
 .aD {
-	background-color:rgba(0,255,0,0.5);
+	background-color:hsla(122, 100%, 25%, 0.5);
 	color:white;
 }
 
@@ -147,7 +147,7 @@ a {
 	text-decoration: none;
 	color: #FFF;
 	font-weight: bold;
-	background-color:rgba(0,255,0,0);
+	background-color:hsla(122, 100%, 25%, 0);
 }
 
 nav a {
@@ -163,8 +163,8 @@ nav a:focus {
 }
 
 nav a:hover {
-	background: gba(0,255,0,0.5);
-	color: #BAB58C;
+	background: hsla(122, 100%, 25%, 0);
+	color: #AEFFAD;
 
 }
 
