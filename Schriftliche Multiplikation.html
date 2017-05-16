@@ -19,7 +19,7 @@
 				zufallszahl2d(),
 				zufallszahl2e(),
 				zufallszahl2f()">
-				
+
 <header class="aD">
 <h1>Schriftliche Multiplikation</h1>
 </header>
@@ -150,14 +150,11 @@
 </main>
 
 	<footer class="aD">
-  		
-		<p> Impressum: Inhaltlich Verantwortlicher gem&auml;&szlig; &sect; 55 Abs. 2 RStV: <br>
-  		Geoffrey Bolt, 
-  		Bunzlauer Weg 7, 38642 Goslar. </p>
-  		<p> Haftungshinweis: Trotz sorgf&auml;ltiger inhaltlicher Kontrolle &uuml;bernehme ich <br> 
-  		keine Haftung f&uuml;r die Inhalte externer Links. F&uuml;r den Inhalt der verlinkten <br>
-  		Seiten sind ausschlie&szlig;lich deren Betreiber verantwortlich. </p>
-		
+
+    <nav>
+      <a href="Impressum.html">Impressum & Haftungshinweis</a>
+    </nav>
+
   	</footer>
 
 <script>
@@ -166,32 +163,32 @@ function zufallszahl1a() {
 		document.getElementById("zufallszahl1a").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-	
+
 	function zufallszahl1b() {
 		document.getElementById("zufallszahl1b").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-    
+
     function zufallszahl1c() {
 		document.getElementById("zufallszahl1c").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-	
+
 	function zufallszahl1d() {
 		document.getElementById("zufallszahl1d").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-	
+
 	function zufallszahl1e() {
 		document.getElementById("zufallszahl1e").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-	
+
 	function zufallszahl1f() {
 		document.getElementById("zufallszahl1f").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-	
+
 	function rechne1a() {
     	var zahl1a = document.getElementById("zufallszahl1a").innerHTML;
         var zahl1b = document.getElementById("zufallszahl1b").innerHTML;
@@ -200,55 +197,55 @@ function zufallszahl1a() {
         var zahl1e = document.getElementById("zufallszahl1e").innerHTML;
         var zahl1f = document.getElementById("zufallszahl1f").innerHTML;
         var ergebnis1a = document.getElementById("ergebnis1a").value;
-        
-        if ((parseInt(zahl1a) * 100 + parseInt(zahl1b) * 10 + 
+
+        if ((parseInt(zahl1a) * 100 + parseInt(zahl1b) * 10 +
         	parseInt(zahl1c)) * (parseInt(zahl1d) * 100 +
         	parseInt(zahl1e) * 10 + parseInt(zahl1f))
         	== parseInt(ergebnis1a))   {
-        
+
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe1a');
 	  		ausgabe.innerHTML = text; }
-        
+
         else {
-        
+
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe1a');
 	  		ausgabe.innerHTML = text;
         }
     }
-    
-    
+
+
     function zufallszahl2a() {
 		document.getElementById("zufallszahl2a").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-	
+
 	function zufallszahl2b() {
 		document.getElementById("zufallszahl2b").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-    
+
     function zufallszahl2c() {
 		document.getElementById("zufallszahl2c").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-	
+
 	function zufallszahl2d() {
 		document.getElementById("zufallszahl2d").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-	
+
 	function zufallszahl2e() {
 		document.getElementById("zufallszahl2e").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-	
+
 	function zufallszahl2f() {
 		document.getElementById("zufallszahl2f").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-	
+
 	function rechne2a() {
     	var zahl2a = document.getElementById("zufallszahl2a").innerHTML;
         var zahl2b = document.getElementById("zufallszahl2b").innerHTML;
@@ -257,24 +254,24 @@ function zufallszahl1a() {
         var zahl2e = document.getElementById("zufallszahl2e").innerHTML;
         var zahl2f = document.getElementById("zufallszahl2f").innerHTML;
         var ergebnis2a = document.getElementById("ergebnis2a").value;
-        
-        if ((parseInt(zahl2a) * 100 + parseInt(zahl2b) * 10 + 
+
+        if ((parseInt(zahl2a) * 100 + parseInt(zahl2b) * 10 +
         	parseInt(zahl2c)) * (parseInt(zahl2d) * 100 +
         	parseInt(zahl2e) * 10 + parseInt(zahl2f))
         	== parseInt(ergebnis1a))   {
-        
+
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe2a');
 	  		ausgabe.innerHTML = text; }
-        
+
         else {
-        
+
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe2a');
 	  		ausgabe.innerHTML = text;
         }
     }
-    
+
 </script>
 
 </body>
