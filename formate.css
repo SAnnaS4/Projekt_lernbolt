@@ -22,8 +22,8 @@ body {
 
 header {
 	position: relative;
-	padding: .6em;
-	padding-left: 8em;
+	padding: 2em;
+	padding-left: 2em;
 }
 
 /*allgemeines Design*/
@@ -63,19 +63,55 @@ nav {
 	float: top;
 	width: 1;
 	list-style-type: none;
-	padding: 1 em 0 35em 1em;
-	margin: .5em;
+	padding: 0em 0em 0em 0em;
+	margin: 0em;
 	z-index: 0;
 }
 
 ol		{
 	list-style-type: none;
 		}
+		
+nav ul{
+	text-align: center;
+}
 
 nav li {
+	text-align: inline-block;
 	min-width: 8em;
+	float: left;
+	list-style: none;
+    margin: .0em 0 .1em 0;
 	padding: 0;
-	margin: .1em 0 .1em 0;
+	position: relative;
+}
+/* Unternavigation ausblenden */
+
+nav ul ul {
+	font: 0/0 serif;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 2.5em;
+	z-index: 1;
+}
+nav div {
+	display: inline;
+	text-decoration: none;
+	padding: .5em .4em;
+	margin-right:20em;
+}
+
+/*  Unternavigation einblenden */
+
+nav ul li:hover ul {
+	font: inherit;
+	z-index: auto;
+}
+
+nav ul ul li {
+	float: none;
+	margin-bottom: 0.2em;
 }
 
 main {
@@ -150,8 +186,8 @@ a {
 	background-color:hsla(122, 100%, 25%, 0);
 }
 
-nav a {
-	display: inline;
+nav a, nav span {
+	display: block;
 	text-decoration: none;
 	padding: .5em .4em;
 	margin-right:20em;

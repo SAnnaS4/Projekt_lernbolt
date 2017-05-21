@@ -12,7 +12,7 @@
 				zufallszahl3(),
 				zufallszahl4(),
 				zufallszahl5()">
-
+				
 <header class="aD">
 <h1> Halbschriftliche Division </h1>
 </header>
@@ -225,166 +225,169 @@
 </main>
 
 	<footer class="aD">
-
-    <nav>
-      <a href="Impressum.html">Impressum & Haftungshinweis</a>
-    </nav>
-
+  		
+		<p> Impressum: Inhaltlich Verantwortlicher gem&auml;&szlig; &sect; 55 Abs. 2 RStV: <br>
+  		Geoffrey Bolt, 
+  		Bunzlauer Weg 7, 38642 Goslar. </p>
+  		<p> Haftungshinweis: Trotz sorgf&auml;ltiger inhaltlicher Kontrolle &uuml;bernehme ich <br> 
+  		keine Haftung f&uuml;r die Inhalte externer Links. F&uuml;r den Inhalt der verlinkten <br>
+  		Seiten sind ausschlie&szlig;lich deren Betreiber verantwortlich. </p>
+		
   	</footer>
 
 <script>
 
 function zufallszahl1() {
 		var zahl1aa = Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
-
+		
 		document.getElementById("zufallszahl1a").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl1aa*10 + Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl1aa;
 		document.getElementById("zufallszahl1b").innerHTML = zahl1aa;
 	}
-
-
+	
+	
     function rechne1a() {
     	var zahl1a = document.getElementById("zufallszahl1a").innerHTML;
     	var zahl1b = document.getElementById("zufallszahl1b").innerHTML;
         var ergebnis1a = document.getElementById("ergebnis1a").value;
-
+        
         if (parseInt(zahl1a) / parseInt(zahl1b) == parseInt(ergebnis1a)) {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe1a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe1a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl2() {
 		var zahl2aa = Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
-
+		
 		document.getElementById("zufallszahl2a").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl2aa*10 + Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl2aa;
 		document.getElementById("zufallszahl2b").innerHTML = zahl2aa;
 	}
-
-
+	
+	
     function rechne2a() {
     	var zahl2a = document.getElementById("zufallszahl2a").innerHTML;
     	var zahl2b = document.getElementById("zufallszahl2b").innerHTML;
         var ergebnis2a = document.getElementById("ergebnis2a").value;
-
+        
         if (parseInt(zahl2a) / parseInt(zahl2b) == parseInt(ergebnis2a)) {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe2a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe2a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl3() {
 		var zahl3aa = Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
-
+		
 		document.getElementById("zufallszahl3a").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl3aa*100 + Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl3aa*10
 		+ Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl3aa;
 		document.getElementById("zufallszahl3b").innerHTML = zahl3aa;
 	}
-
-
+	
+	
     function rechne3a() {
     	var zahl3a = document.getElementById("zufallszahl3a").innerHTML;
     	var zahl3b = document.getElementById("zufallszahl3b").innerHTML;
         var ergebnis3a = document.getElementById("ergebnis3a").value;
-
+        
         if (parseInt(zahl3a) / parseInt(zahl3b) == parseInt(ergebnis3a)) {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe3a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe3a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl4() {
 		var zahl4aa = Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
-
+		
 		document.getElementById("zufallszahl4a").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl4aa*100 + Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl4aa*10
 		+ Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl4aa;
 		document.getElementById("zufallszahl4b").innerHTML = zahl4aa;
 	}
-
-
+	
+	
     function rechne4a() {
     	var zahl4a = document.getElementById("zufallszahl4a").innerHTML;
     	var zahl4b = document.getElementById("zufallszahl4b").innerHTML;
         var ergebnis4a = document.getElementById("ergebnis4a").value;
-
+        
         if (parseInt(zahl4a) / parseInt(zahl4b) == parseInt(ergebnis4a)) {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe4a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe4a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl5() {
 		var zahl5aa = Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
-
+		
 		document.getElementById("zufallszahl5a").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl5aa*1000 +
-		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl5aa*100 +
-		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl5aa*10 +
+		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl5aa*100 + 
+		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl5aa*10 + 
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahl5aa;
 		document.getElementById("zufallszahl5b").innerHTML = zahl5aa;
 	}
-
-
+	
+	
     function rechne5a() {
     	var zahl5a = document.getElementById("zufallszahl5a").innerHTML;
     	var zahl5b = document.getElementById("zufallszahl5b").innerHTML;
         var ergebnis5a = document.getElementById("ergebnis5a").value;
-
+        
         if (parseInt(zahl5a) / parseInt(zahl5b) == parseInt(ergebnis5a)) {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe5a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe5a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
-
+    
+    
+    
 </script>
 
 </body>
