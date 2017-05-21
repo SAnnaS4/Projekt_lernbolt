@@ -19,7 +19,7 @@
 				zufallszahl5b(),
 				zufallszahl6a(),
 				zufallszahl6b()">
-
+				
 <header class="aD">
 <h1>Halbschriftliche Multiplikation</h1>
 </header>
@@ -238,11 +238,14 @@
 </main>
 
 	<footer class="aD">
-
-    <nav>
-      <a href="Impressum.html">Impressum & Haftungshinweis</a>
-    </nav>
-
+  		
+		<p> Impressum: Inhaltlich Verantwortlicher gem&auml;&szlig; &sect; 55 Abs. 2 RStV: <br>
+  		Geoffrey Bolt, 
+  		Bunzlauer Weg 7, 38642 Goslar. </p>
+  		<p> Haftungshinweis: Trotz sorgf&auml;ltiger inhaltlicher Kontrolle &uuml;bernehme ich <br> 
+  		keine Haftung f&uuml;r die Inhalte externer Links. F&uuml;r den Inhalt der verlinkten <br>
+  		Seiten sind ausschlie&szlig;lich deren Betreiber verantwortlich. </p>
+		
   	</footer>
 
 <script>
@@ -251,175 +254,175 @@ function zufallszahl1a() {
 		document.getElementById("zufallszahl1a").innerHTML =
 		Math.floor(Math.random() * ((99 - 21 + 1)) + 21);
 	}
-
+	
 	function zufallszahl1b() {
 		document.getElementById("zufallszahl1b").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
 	}
-
+	
     function rechne1a() {
     	var zahl1a = document.getElementById("zufallszahl1a").innerHTML;
     	var zahl1b = document.getElementById("zufallszahl1b").innerHTML;
         var ergebnis1a = document.getElementById("ergebnis1a").value;
-
+        
         if (parseInt(zahl1a) * parseInt(zahl1b) == parseInt(ergebnis1a)) {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe1a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe1a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl2a() {
 		document.getElementById("zufallszahl2a").innerHTML =
 		Math.floor(Math.random() * ((99 - 21 + 1)) + 21);
 	}
-
+	
 	function zufallszahl2b() {
 		document.getElementById("zufallszahl2b").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
 	}
-
+	
     function rechne2a() {
     	var zahl2a = document.getElementById("zufallszahl2a").innerHTML;
     	var zahl2b = document.getElementById("zufallszahl2b").innerHTML;
         var ergebnis2a = document.getElementById("ergebnis2a").value;
-
+        
         if (parseInt(zahl2a) * parseInt(zahl2b) == parseInt(ergebnis2a)) {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe2a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe2a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl3a() {
 		document.getElementById("zufallszahl3a").innerHTML =
 		Math.floor(Math.random() * ((999 - 21 + 1)) + 21);
 	}
-
+	
 	function zufallszahl3b() {
 		document.getElementById("zufallszahl3b").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
 	}
-
+	
     function rechne3a() {
     	var zahl3a = document.getElementById("zufallszahl3a").innerHTML;
     	var zahl3b = document.getElementById("zufallszahl3b").innerHTML;
         var ergebnis3a = document.getElementById("ergebnis3a").value;
-
+        
         if (parseInt(zahl3a) * parseInt(zahl3b) == parseInt(ergebnis3a)) {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe3a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe3a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl4a() {
 		document.getElementById("zufallszahl4a").innerHTML =
 		Math.floor(Math.random() * ((999 - 21 + 1)) + 21);
 	}
-
+	
 	function zufallszahl4b() {
 		document.getElementById("zufallszahl4b").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
 	}
-
+	
     function rechne4a() {
     	var zahl4a = document.getElementById("zufallszahl4a").innerHTML;
     	var zahl4b = document.getElementById("zufallszahl4b").innerHTML;
         var ergebnis4a = document.getElementById("ergebnis4a").value;
-
+        
         if (parseInt(zahl4a) * parseInt(zahl4b) == parseInt(ergebnis4a)) {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe4a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe4a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl5a() {
 		document.getElementById("zufallszahl5a").innerHTML =
 		Math.floor(Math.random() * ((9999 - 111 + 1)) + 111);
 	}
-
+	
 	function zufallszahl5b() {
 		document.getElementById("zufallszahl5b").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
 	}
-
+	
     function rechne5a() {
     	var zahl5a = document.getElementById("zufallszahl5a").innerHTML;
     	var zahl5b = document.getElementById("zufallszahl5b").innerHTML;
         var ergebnis5a = document.getElementById("ergebnis5a").value;
-
+        
         if (parseInt(zahl5a) * parseInt(zahl5b) == parseInt(ergebnis5a)) {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe5a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe5a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl6a() {
 		document.getElementById("zufallszahl6a").innerHTML =
 		Math.floor(Math.random() * ((9999 - 111 + 1)) + 111);
 	}
-
+	
 	function zufallszahl6b() {
 		document.getElementById("zufallszahl6b").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
 	}
-
+	
     function rechne6a() {
     	var zahl6a = document.getElementById("zufallszahl6a").innerHTML;
     	var zahl6b = document.getElementById("zufallszahl6b").innerHTML;
         var ergebnis6a = document.getElementById("ergebnis6a").value;
-
+        
         if (parseInt(zahl6a) * parseInt(zahl6b) == parseInt(ergebnis6a)) {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe6a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe6a');
 	  		ausgabe.innerHTML = text;
