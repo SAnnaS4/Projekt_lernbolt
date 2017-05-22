@@ -33,7 +33,7 @@ header {
 #StartH {
 	margin: .5em 0;
 	padding: .5em;
-	background-color:hsla(122, 100%, 25%, 0.5);
+	background-color:hsla(122, 100%, 25%, 0.7);
 	color:white;
 	height: 2em;
 }
@@ -45,7 +45,7 @@ header {
 
 /*allgemeines Design*/
 .aD {
-	background-color:hsla(122, 100%, 25%, 0.5);
+	background-color:hsla(122, 100%, 25%, 0.7);
 	color:white;
 }
 
