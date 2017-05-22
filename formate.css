@@ -26,6 +26,10 @@ header {
 	padding-left: 2em;
 }
 
+#LB {
+	font-size:15em;
+}
+
 #StartH {
 	margin: .5em 0;
 	padding: .5em;
