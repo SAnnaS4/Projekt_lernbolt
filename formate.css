@@ -107,9 +107,11 @@ nav div {
 nav ul li:hover ul {
 	font: inherit;
 	z-index: auto;
+	background-color:black;
 }
 
 nav ul ul li {
+	
 	float: none;
 	margin-bottom: 0.2em;
 }
@@ -190,7 +192,7 @@ nav a, nav span {
 	display: block;
 	text-decoration: none;
 	padding: .5em .4em;
-	margin-right:20em;
+	margin-right:1em;
 }
 
 nav a:focus {
