@@ -26,6 +26,19 @@ header {
 	padding-left: 2em;
 }
 
+#StartH {
+	margin: .5em 0;
+	padding: .5em;
+	background-color:hsla(122, 100%, 25%, 0.5);
+	color:white;
+	height: 2em;
+}
+
+#StartN {
+	color:white;
+	display: inline;
+}
+
 /*allgemeines Design*/
 .aD {
 	background-color:hsla(122, 100%, 25%, 0.5);
@@ -63,9 +76,6 @@ nav {
 	float: top;
 	width: 1;
 	list-style-type: none;
-	padding: 0em 0em 0em 0em;
-	margin: 0em;
-	z-index: 0;
 }
 
 ol		{
@@ -74,16 +84,16 @@ ol		{
 		
 nav ul{
 	text-align: center;
+	display: inline;
+	/*text-align: inline-block;*/
 }
 
 nav li {
+	display: inline;
 	text-align: inline-block;
 	min-width: 8em;
 	float: left;
 	list-style: none;
-    margin: .0em 0 .1em 0;
-	padding: 0;
-	position: relative;
 }
 /* Unternavigation ausblenden */
 
@@ -92,11 +102,10 @@ nav ul ul {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	top: 2.5em;
+	top: 2em;
 	z-index: 1;
 }
 nav div {
-	display: inline;
 	text-decoration: none;
 	padding: .5em .4em;
 	margin-right:20em;
@@ -111,7 +120,7 @@ nav ul li:hover ul {
 }
 
 nav ul ul li {
-	
+	display: block;
 	float: none;
 	margin-bottom: 0.2em;
 }
