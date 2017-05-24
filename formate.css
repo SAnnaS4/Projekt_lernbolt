@@ -85,7 +85,7 @@ nav {
 ol		{
 	list-style-type: none;
 		}
-		
+
 nav ul{
 	text-align: center;
 	display: inline;
@@ -109,6 +109,7 @@ nav ul ul {
 	top: 2em;
 	z-index: 1;
 }
+
 nav div {
 	text-decoration: none;
 	padding: .5em .4em;
@@ -120,7 +121,7 @@ nav div {
 nav ul li:hover ul {
 	font: inherit;
 	z-index: auto;
-	background-color:black;
+	background-color:rgba(0, 0, 0, 0.5);
 }
 
 nav ul ul li {
@@ -221,7 +222,7 @@ nav a:hover {
 
 nav a:active,
 a.active {
-	background: #580E0E;
+	background: hsla(122, 100%, 25%, 0);
 	color: #BAB58C;
 }
 
