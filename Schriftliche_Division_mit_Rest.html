@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" href="formate.css">
+    <title>Mathebolt</title>
+  </head>
+<body id="Mathe" onload="zufallszahl1a(),
+				zufallszahl1b(),
+				zufallszahl1c(),
+				zufallszahl1d(),
+				zufallszahl1e(),
+				zufallszahl2a(),
+				zufallszahl2b(),
+				zufallszahl2c(),
+				zufallszahl2d(),
+				zufallszahl2e()">
+				
+<header class="aD">
+<h1>Schriftliche Division mit Rest</h1>
+   	<nav>
+		<ul>
+		     <li> <a href="Startseite.html"> Startseite </a><li>
+			 <li> <a href="musik.html"> Musik </a> </li>
+  			 <li> <a href="mathe.html"> Mathe </a> 
+        			<ul>
+					  <li> <a href="Plusaufgaben_bis_10.html"> Zahlenraum bis 10 - Plusaufgaben </a> </li>
+				      <li> <a href="HalbhandschriftlicheMultiplikation.html"> Halbschriftliche Multiplikation </a> </li>
+				   	  <li>  <a href="SchriftlicheMultiplikation.html"> Schriftliche Multiplikation </a> </li>
+			    	  <li> <a href="HalbschriftlicheDivision.html"> Halbschriftliche Division </a> </li>
+					  <li> <a href="Sschriftliche_Division_mit_Rest.html"> Schriftliche Division mit Rest </a> </li>
+					 </ul>
+			</li>
+		
+					  
+  	</nav>
+	</header>
+
+<main class="aD">
+<article>
+<table>
+	<tr>
+    	<td id="zufallszahl1a"> </td>
+    	<td id="zufallszahl1b"> </td>
+    	<td id="zufallszahl1c"> </td>
+    	<td id="zufallszahl1d"> </td>
+    	<td> : </td>
+    	<td id="zufallszahl1e"> </td>
+    	<td> = <td>
+    	<input size="8" id="ergebnis1a" value="">
+    	<td> Rest: </td>
+    	<td><input size="4" id="rest1a" value="" placeholder="Rest"></td>
+    	<td><button onclick="rechne1a()" id="ausgabe1a">Pr&uuml;fe!</button></td>
+    </tr>
+    <tr>
+    	<td class="border1"><input size="2"></td>
+    </tr>
+    <tr>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    </tr>
+    <tr>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    </tr>
+</table>
+</article>
+
+<article>
+<table>
+	<tr>
+    	<td id="zufallszahl2a"> </td>
+    	<td id="zufallszahl2b"> </td>
+    	<td id="zufallszahl2c"> </td>
+    	<td id="zufallszahl2d"> </td>
+    	<td> : </td>
+    	<td id="zufallszahl2e"> </td>
+    	<td> = <td>
+    	<input size="8" id="ergebnis2a" value="">
+    	<td> Rest: </td>
+    	<td><input size="4" id="rest2a" value="" placeholder="Rest"></td>
+    	<td><button onclick="rechne2a()" id="ausgabe2a">Pr&uuml;fe!</button></td>
+    </tr>
+    <tr>
+    	<td class="border1"><input size="2"></td>
+    </tr>
+    <tr>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    </tr>
+    <tr>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    </tr>
+</table>
+</article>
+</main>
+
+	<footer class="aD">
+  		
+		<p> Impressum: Inhaltlich Verantwortlicher gem&auml;&szlig; &sect; 55 Abs. 2 RStV: <br>
+  		Geoffrey Bolt, 
+  		Bunzlauer Weg 7, 38642 Goslar. </p>
+  		<p> Haftungshinweis: Trotz sorgf&auml;ltiger inhaltlicher Kontrolle &uuml;bernehme ich <br> 
+  		keine Haftung f&uuml;r die Inhalte externer Links. F&uuml;r den Inhalt der verlinkten <br>
+  		Seiten sind ausschlie&szlig;lich deren Betreiber verantwortlich. </p>
+		
+  	</footer>
+
+<script>
+
+function zufallszahl1a() {
+		document.getElementById("zufallszahl1a").innerHTML =
+		Math.floor(Math.random() * (9 - 1 + 1)) + 1;
+	}
+	
+	function zufallszahl1b() {
+		document.getElementById("zufallszahl1b").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+    
+    function zufallszahl1c() {
+		document.getElementById("zufallszahl1c").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+	
+	function zufallszahl1d() {
+		document.getElementById("zufallszahl1d").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+	
+	function zufallszahl1e() {
+		document.getElementById("zufallszahl1e").innerHTML =
+		Math.floor(Math.random() * (9 - 3 + 1)) + 3;
+	}
+	
+	function rechne1a() {
+    	var zahl1a = document.getElementById("zufallszahl1a").innerHTML;
+        var zahl1b = document.getElementById("zufallszahl1b").innerHTML;
+        var zahl1c = document.getElementById("zufallszahl1c").innerHTML;
+        var zahl1d = document.getElementById("zufallszahl1d").innerHTML;
+        var zahl1e = document.getElementById("zufallszahl1e").innerHTML;
+        var ergebnis1a = document.getElementById("ergebnis1a").value;
+        var rest1a = document.getElementById("rest1a").value;
+        
+        if (parseInt(zahl1a) * 1000 + parseInt(zahl1b) * 100 + 
+        	parseInt(zahl1c) * 10 + parseInt(zahl1d)
+        	== parseInt(zahl1e) * parseInt(ergebnis1a) + parseInt(rest1a))   {
+        
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe1a');
+	  		ausgabe.innerHTML = text; }
+        
+        else {
+        
+        var text = 'Falsch!';
+	  		var ausgabe = document.getElementById('ausgabe1a');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+    
+    
+function zufallszahl2a() {
+		document.getElementById("zufallszahl2a").innerHTML =
+		Math.floor(Math.random() * (9 - 1 + 1)) + 1;
+	}
+	
+	function zufallszahl2b() {
+		document.getElementById("zufallszahl2b").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+    
+    function zufallszahl2c() {
+		document.getElementById("zufallszahl2c").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+	
+	function zufallszahl2d() {
+		document.getElementById("zufallszahl2d").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+	
+	function zufallszahl2e() {
+		document.getElementById("zufallszahl2e").innerHTML =
+		Math.floor(Math.random() * (9 - 3 + 1)) + 3;
+	}
+	
+	function rechne2a() {
+    	var zahl2a = document.getElementById("zufallszahl2a").innerHTML;
+        var zahl2b = document.getElementById("zufallszahl2b").innerHTML;
+        var zahl2c = document.getElementById("zufallszahl2c").innerHTML;
+        var zahl2d = document.getElementById("zufallszahl2d").innerHTML;
+        var zahl2e = document.getElementById("zufallszahl2e").innerHTML;
+        var ergebnis2a = document.getElementById("ergebnis2a").value;
+        var rest2a = document.getElementById("rest2a").value;
+        
+        if (parseInt(zahl2a) * 1000 + parseInt(zahl2b) * 100 + 
+        	parseInt(zahl2c) * 10 + parseInt(zahl2d)
+        	== parseInt(zahl2e) * parseInt(ergebnis2a) + parseInt(rest2a))   {
+        
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe2a');
+	  		ausgabe.innerHTML = text; }
+        
+        else {
+        
+        var text = 'Falsch!';
+	  		var ausgabe = document.getElementById('ausgabe2a');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+    
+</script>
+
+</body>
+</html>

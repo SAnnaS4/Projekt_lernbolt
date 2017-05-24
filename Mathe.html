@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="formate.css">
     <title> Mathebolt </title>
   </head>
-
+  
 <body id="Mathe" onload="zufallszahl1a(),
 				zufallszahl1b(),
 				zufallszahl1c(),
@@ -111,15 +111,23 @@
 
 <header class="aD">
 <h1> Mathebolt </h1>
-</header>
-
-	<nav>
-  			<li> <a href="Startseite.html"> Startseite </a> 				</li>
-  			<li> <a href="musik.html"> Musik </a> 					</li>
-  			<li> <a href="mathe.html"> Mathe </a> 					</li>
-  			<li> <a href="mathe2.html"> Mathe2 </a> 				</li>
+   	<nav>
+		<ul>
+		     <li> <a href="Startseite.html"> Startseite </a><li>
+			 <li> <a href="musik.html"> Musik </a> </li>
+  			 <li> <a href="mathe.html"> Mathe </a> 
+        			<ul>
+					  <li> <a href="Plusaufgaben_bis_10.html"> Zahlenraum bis 10 - Plusaufgaben </a> </li>
+				      <li> <a href="HalbhandschriftlicheMultiplikation.html"> Halbschriftliche Multiplikation </a> </li>
+				   	  <li>  <a href="SchriftlicheMultiplikation.html"> Schriftliche Multiplikation </a> </li>
+			    	  <li> <a href="HalbschriftlicheDivision.html"> Halbschriftliche Division </a> </li>
+					  <li> <a href="Sschriftliche_Division_mit_Rest.html"> Schriftliche Division mit Rest </a> </li>
+					 </ul>
+			</li>
+		
+					  
   	</nav>
-
+ </header> 	
   	<main class="aD">
 
 <article>
@@ -1990,9 +1998,13 @@
 	</main>
 
 	<footer class="aD">
-    <nav>
-      <a href="Impressum.html">Impressum & Haftungshinweis</a>
-    </nav>
+  		<p> Impressum: Inhaltlich Verantwortlicher gem&auml;&szlig; &sect; 55 Abs. 2 RStV: <br>
+  		Geoffrey Bolt, 
+  		Bunzlauer Weg 7, 38642 Goslar. </p>
+  		<p> Haftungshinweis: Trotz sorgf&auml;ltiger inhaltlicher Kontrolle &uuml;bernehme ich <br> 
+  		keine Haftung f&uuml;r die Inhalte externer Links. F&uuml;r den Inhalt der verlinkten <br>
+  		Seiten sind ausschlie&szlig;lich deren Betreiber verantwortlich. </p>
+  	</footer>
 
 <script>
 
@@ -2000,1804 +2012,1804 @@
 		document.getElementById("zufallszahl1a").innerHTML =
 		Math.floor(Math.random() * 6);
 	}
-
+    
     function zufallszahl1b() {
 		document.getElementById("zufallszahl1b").innerHTML =
 		Math.floor(Math.random() * 6);
 	}
-
+   
    	function rechne1a() {
     	var zahl1a = document.getElementById("zufallszahl1a").innerHTML;
         var zahl1b = document.getElementById("zufallszahl1b").innerHTML;
         var ergebnis1a = document.getElementById("ergebnis1a").value;
-
+        
         if (parseInt(zahl1a) + parseInt(zahl1b) == parseInt(ergebnis1a)) {
-
+        
         var x = document.getElementById('ausgabe1a');
     	x.style.background = "green";
-
+    	
         var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe1a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe1a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe1a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
+    
     function zufallszahl1c() {
 		document.getElementById("zufallszahl1c").innerHTML =
 		Math.floor(Math.random() * 6);
 	}
-
+    
     function zufallszahl1d() {
 		document.getElementById("zufallszahl1d").innerHTML =
 		Math.floor(Math.random() * 6);
 	}
-
+   
    	function rechne1b() {
     	var zahl1c = document.getElementById("zufallszahl1c").innerHTML;
         var zahl1d = document.getElementById("zufallszahl1d").innerHTML;
         var ergebnis1b = document.getElementById("ergebnis1b").value;
-
+        
         if (parseInt(zahl1c) + parseInt(zahl1d) == parseInt(ergebnis1b)) {
-
+        
         var x = document.getElementById('ausgabe1b');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe1b');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe1b');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe1b');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl1e() {
 		document.getElementById("zufallszahl1e").innerHTML =
 		Math.floor(Math.random() * 6);
 	}
-
+    
     function zufallszahl1f() {
 		document.getElementById("zufallszahl1f").innerHTML =
 		Math.floor(Math.random() * 6);
 	}
-
+   
    	function rechne1c() {
     	var zahl1e = document.getElementById("zufallszahl1e").innerHTML;
         var zahl1f = document.getElementById("zufallszahl1f").innerHTML;
         var ergebnis1c = document.getElementById("ergebnis1c").value;
-
+        
         if (parseInt(zahl1e) + parseInt(zahl1f) == parseInt(ergebnis1c)) {
-
+        
         var x = document.getElementById('ausgabe1c');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe1c');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe1c');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe1c');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl1g() {
 		document.getElementById("zufallszahl1g").innerHTML =
 		Math.floor(Math.random() * 6);
 	}
-
+    
     function zufallszahl1h() {
 		document.getElementById("zufallszahl1h").innerHTML =
 		Math.floor(Math.random() * 6);
 	}
-
+   
    	function rechne1d() {
     	var zahl1g = document.getElementById("zufallszahl1g").innerHTML;
         var zahl1h = document.getElementById("zufallszahl1h").innerHTML;
         var ergebnis1d = document.getElementById("ergebnis1d").value;
-
+        
         if (parseInt(zahl1g) + parseInt(zahl1h) == parseInt(ergebnis1d)) {
-
+        
         var x = document.getElementById('ausgabe1d');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe1d');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe1d');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe1d');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl2a() {
 		document.getElementById("zufallszahl2a").innerHTML =
 		Math.floor(Math.random() * (10 - 5 + 1)) + 5;
 	}
-
+    
     function zufallszahl2b() {
 		document.getElementById("zufallszahl2b").innerHTML =
 		Math.floor(Math.random() * (5 - 0 + 1)) + 0;
 	}
-
+   
    	function rechne2a() {
     	var zahl2a = document.getElementById("zufallszahl2a").innerHTML;
         var zahl2b = document.getElementById("zufallszahl2b").innerHTML;
         var ergebnis2a = document.getElementById("ergebnis2a").value;
-
+        
         if (parseInt(zahl2a) - parseInt(zahl2b) == parseInt(ergebnis2a)) {
-
+        
         var x = document.getElementById('ausgabe2a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe2a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe2a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe2a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl2c() {
 		document.getElementById("zufallszahl2c").innerHTML =
 		Math.floor(Math.random() * (10 - 5 + 1)) + 5;
 	}
-
+    
     function zufallszahl2d() {
 		document.getElementById("zufallszahl2d").innerHTML =
 		Math.floor(Math.random() * (5 - 0 + 1)) + 0;
 	}
-
+   
    	function rechne2b() {
     	var zahl2c = document.getElementById("zufallszahl2c").innerHTML;
         var zahl2d = document.getElementById("zufallszahl2d").innerHTML;
         var ergebnis2b = document.getElementById("ergebnis2b").value;
-
+        
         if (parseInt(zahl2c) - parseInt(zahl2d) == parseInt(ergebnis2b)) {
-
+        
         var x = document.getElementById('ausgabe2b');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe2b');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe2b');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe2b');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl2e() {
 		document.getElementById("zufallszahl2e").innerHTML =
 		Math.floor(Math.random() * (10 - 5 + 1)) + 5;
 	}
-
+    
     function zufallszahl2f() {
 		document.getElementById("zufallszahl2f").innerHTML =
 		Math.floor(Math.random() * (5 - 0 + 1)) + 0;
 	}
-
+   
    	function rechne2c() {
     	var zahl2e = document.getElementById("zufallszahl2e").innerHTML;
         var zahl2f = document.getElementById("zufallszahl2f").innerHTML;
         var ergebnis2c = document.getElementById("ergebnis2c").value;
-
+        
         if (parseInt(zahl2e) - parseInt(zahl2f) == parseInt(ergebnis2c)) {
-
+        
         var x = document.getElementById('ausgabe2c');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe2c');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe2c');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe2c');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl2g() {
 		document.getElementById("zufallszahl2g").innerHTML =
 		Math.floor(Math.random() * (10 - 5 + 1)) + 5;
 	}
-
+    
     function zufallszahl2h() {
 		document.getElementById("zufallszahl2h").innerHTML =
 		Math.floor(Math.random() * (5 - 0 + 1)) + 0;
 	}
-
+   
    	function rechne2d() {
     	var zahl2g = document.getElementById("zufallszahl2g").innerHTML;
         var zahl2h = document.getElementById("zufallszahl2h").innerHTML;
         var ergebnis2d = document.getElementById("ergebnis2d").value;
-
+        
         if (parseInt(zahl2g) - parseInt(zahl2h) == parseInt(ergebnis2d)) {
-
+        
         var x = document.getElementById('ausgabe2d');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe2d');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe2d');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe2d');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl3a() {
 		document.getElementById("zufallszahl3a").innerHTML =
 		Math.floor(Math.random() * (10 - 0 + 1)) + 0;
 	}
-
+   
    	function rechne3a() {
     	var zahl3a = document.getElementById("zufallszahl3a").innerHTML;
         var ergebnis3a = document.getElementById("ergebnis3a").value;
-
+        
         if (parseInt(zahl3a) + parseInt(ergebnis3a) == 10) {
-
+        
         var x = document.getElementById('ausgabe3a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe3a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe3a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe3a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl3b() {
 		document.getElementById("zufallszahl3b").innerHTML =
 		Math.floor(Math.random() * (10 - 0 + 1)) + 0;
 	}
-
+   
    	function rechne3b() {
     	var zahl3b = document.getElementById("zufallszahl3b").innerHTML;
         var ergebnis3b = document.getElementById("ergebnis3b").value;
-
+        
         if (parseInt(zahl3b) + parseInt(ergebnis3b) == 10) {
-
+        
         var x = document.getElementById('ausgabe3b');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe3b');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe3b');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe3b');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
-
+    
+    
+    
     function zufallszahl3c() {
 		document.getElementById("zufallszahl3c").innerHTML =
 		Math.floor(Math.random() * (10 - 0 + 1)) + 0;
 	}
-
+	
     function rechne3c() {
     	var zahl3c = document.getElementById("zufallszahl3c").innerHTML;
         var ergebnis3c = document.getElementById("ergebnis3c").value;
-
+        
         if (parseInt(zahl3c) + parseInt(ergebnis3c) == 10) {
-
+        
         var x = document.getElementById('ausgabe3c');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe3c');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe3c');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe3c');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl3d() {
 		document.getElementById("zufallszahl3d").innerHTML =
 		Math.floor(Math.random() * (10 - 0 + 1)) + 0;
 	}
-
+	
     function rechne3d() {
     	var zahl3d = document.getElementById("zufallszahl3d").innerHTML;
         var ergebnis3d = document.getElementById("ergebnis3d").value;
-
+        
         if (parseInt(zahl3d) + parseInt(ergebnis3d) == 10) {
-
+        
         var x = document.getElementById('ausgabe3d');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe3d');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe3d');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe3d');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl4a() {
 		document.getElementById("zufallszahl4a").innerHTML =
 		Math.floor(Math.random() * (10 - 0 + 1)) + 0;
 	}
-
+	
     function rechne4a() {
     	var zahl4a = document.getElementById("zufallszahl4a").innerHTML;
         var ergebnis4a = document.getElementById("ergebnis4a").value;
-
+        
         if (10 - parseInt(zahl4a) == parseInt(ergebnis4a)) {
-
+        
         var x = document.getElementById('ausgabe4a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe4a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe4a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe4a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl4b() {
 		document.getElementById("zufallszahl4b").innerHTML =
 		Math.floor(Math.random() * (10 - 0 + 1)) + 0;
 	}
-
+	
     function rechne4b() {
     	var zahl4b = document.getElementById("zufallszahl4b").innerHTML;
         var ergebnis4b = document.getElementById("ergebnis4b").value;
-
+        
         if (10 - parseInt(zahl4b) == parseInt(ergebnis4b)) {
-
+        
         var x = document.getElementById('ausgabe4b');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe4b');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe4b');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe4b');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl4c() {
 		document.getElementById("zufallszahl4c").innerHTML =
 		Math.floor(Math.random() * (10 - 0 + 1)) + 0;
 	}
-
+	
     function rechne4c() {
     	var zahl4c = document.getElementById("zufallszahl4c").innerHTML;
         var ergebnis4c = document.getElementById("ergebnis4c").value;
-
+        
         if (10 - parseInt(zahl4c) == parseInt(ergebnis4c)) {
-
+        
         var x = document.getElementById('ausgabe4c');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe4c');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe4c');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe4c');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl4d() {
 		document.getElementById("zufallszahl4d").innerHTML =
 		Math.floor(Math.random() * (10 - 0 + 1)) + 0;
 	}
-
+	
     function rechne4d() {
     	var zahl4d = document.getElementById("zufallszahl4d").innerHTML;
         var ergebnis4d = document.getElementById("ergebnis4d").value;
-
+        
         if (10 - parseInt(zahl4d) == parseInt(ergebnis4d)) {
-
+        
         var x = document.getElementById('ausgabe4d');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe4d');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe4d');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe4d');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl5a() {
 		document.getElementById("zufallszahl5a").innerHTML =
 		Math.floor(Math.random() * (9 - 6 + 1)) + 6;
 	}
-
+	
 	function zufallszahl5b() {
 		document.getElementById("zufallszahl5b").innerHTML =
 		Math.floor(Math.random() * (9 - 6 + 1)) + 6;
 	}
-
+	
     function rechne5a() {
     	var zahl5a = document.getElementById("zufallszahl5a").innerHTML;
     	var zahl5b = document.getElementById("zufallszahl5b").innerHTML;
         var ergebnis5a = document.getElementById("ergebnis5a").value;
-
+        
         if (parseInt(zahl5a) + parseInt(zahl5b) == parseInt(ergebnis5a)) {
-
+        
         var x = document.getElementById('ausgabe5a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe5a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe5a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe5a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl6a() {
 		document.getElementById("zufallszahl6a").innerHTML =
 		Math.floor(Math.random() * (9 - 6 + 1)) + 6;
 	}
-
+	
 	function zufallszahl6b() {
 		document.getElementById("zufallszahl6b").innerHTML =
 		Math.floor(Math.random() * (9 - 6 + 1)) + 6;
 	}
-
+	
     function rechne6a() {
     	var zahl6a = document.getElementById("zufallszahl6a").innerHTML;
     	var zahl6b = document.getElementById("zufallszahl6b").innerHTML;
         var ergebnis6a = document.getElementById("ergebnis6a").value;
-
+        
         if (parseInt(zahl6a) + parseInt(zahl6b) == parseInt(ergebnis6a)) {
-
+        
         var x = document.getElementById('ausgabe6a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe6a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe6a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe6a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl7a() {
 		document.getElementById("zufallszahl7a").innerHTML =
 		Math.floor(Math.random() * (15 - 11 + 1)) + 11;
 	}
-
+	
 	function zufallszahl7b() {
 		document.getElementById("zufallszahl7b").innerHTML =
 		Math.floor(Math.random() * (9 - 6 + 1)) + 6;
 	}
-
+	
     function rechne7a() {
     	var zahl7a = document.getElementById("zufallszahl7a").innerHTML;
     	var zahl7b = document.getElementById("zufallszahl7b").innerHTML;
         var ergebnis7a = document.getElementById("ergebnis7a").value;
-
+        
         if (parseInt(zahl7a) - parseInt(zahl7b) == parseInt(ergebnis7a)) {
-
+        
         var x = document.getElementById('ausgabe7a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe7a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe7a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe7a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl8a() {
 		document.getElementById("zufallszahl8a").innerHTML =
 		Math.floor(Math.random() * (15 - 11 + 1)) + 11;
 	}
-
+	
 	function zufallszahl8b() {
 		document.getElementById("zufallszahl8b").innerHTML =
 		Math.floor(Math.random() * (9 - 6 + 1)) + 6;
 	}
-
+	
     function rechne8a() {
     	var zahl8a = document.getElementById("zufallszahl8a").innerHTML;
     	var zahl8b = document.getElementById("zufallszahl8b").innerHTML;
         var ergebnis8a = document.getElementById("ergebnis8a").value;
-
+        
         if (parseInt(zahl8a) - parseInt(zahl8b) == parseInt(ergebnis8a)) {
-
+        
         var x = document.getElementById('ausgabe8a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe8a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe8a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe8a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl9a() {
 		document.getElementById("zufallszahl9a").innerHTML =
 		Math.floor(Math.random() * (5 - 1 + 1)) + 1;
 	}
-
+	
 	function zufallszahl9b() {
 		document.getElementById("zufallszahl9b").innerHTML =
 		Math.floor(Math.random() * (5 - 1 + 1)) + 1;
 	}
-
+	
     function rechne9a() {
     	var zahl9a = document.getElementById("zufallszahl9a").innerHTML;
     	var zahl9b = document.getElementById("zufallszahl9b").innerHTML;
         var ergebnis9a = document.getElementById("ergebnis9a").value;
-
+        
         if (parseInt(zahl9a) + parseInt(zahl9b) == parseInt(ergebnis9a)) {
-
+        
         var x = document.getElementById('ausgabe9a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe9a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe9a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe9a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
+    
     function rechne9aa() {
     	var zahl9a = document.getElementById("zufallszahl9a").innerHTML;
     	var text = parseInt(zahl9a) + 10
-
+    	
     	var ausgabe = document.getElementById('ausgabe9aa');
 	  		ausgabe.innerHTML = text;
         }
-
+        
     function rechne9ab() {
     	var zahl9b = document.getElementById("zufallszahl9b").innerHTML;
     	var text = parseInt(zahl9b)
-
+    	
     	var ausgabe = document.getElementById('ausgabe9ab');
 	  		ausgabe.innerHTML = text;
         }
-
+    
     function rechne9b() {
     	var zahl9aa = document.getElementById("ausgabe9aa").innerHTML;
     	var zahl9ab = document.getElementById("ausgabe9ab").innerHTML;
         var ergebnis9b = document.getElementById("ergebnis9b").value;
-
+        
         if (parseInt(zahl9aa) + parseInt(zahl9ab) == parseInt(ergebnis9b)) {
-
+        
         var x = document.getElementById('ausgabe9b');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe9b');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe9b');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe9b');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl10a() {
 		document.getElementById("zufallszahl10a").innerHTML =
 		Math.floor(Math.random() * (5 - 1 + 1)) + 1;
 	}
-
+	
 	function zufallszahl10b() {
 		document.getElementById("zufallszahl10b").innerHTML =
 		Math.floor(Math.random() * (5 - 1 + 1)) + 1;
 	}
-
+	
     function rechne10a() {
     	var zahl10a = document.getElementById("zufallszahl10a").innerHTML;
     	var zahl10b = document.getElementById("zufallszahl10b").innerHTML;
         var ergebnis10a = document.getElementById("ergebnis10a").value;
-
+        
         if (parseInt(zahl10a) + parseInt(zahl10b) == parseInt(ergebnis10a)) {
-
+        
         var x = document.getElementById('ausgabe10a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe10a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe10a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe10a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
+    
     function rechne10aa() {
     	var zahl10a = document.getElementById("zufallszahl10a").innerHTML;
     	var text = parseInt(zahl10a) + 10
-
+    	
     	var ausgabe = document.getElementById('ausgabe10aa');
 	  		ausgabe.innerHTML = text;
         }
-
+        
     function rechne10ab() {
     	var zahl10b = document.getElementById("zufallszahl10b").innerHTML;
     	var text = parseInt(zahl10b)
-
+    	
     	var ausgabe = document.getElementById('ausgabe10ab');
 	  		ausgabe.innerHTML = text;
         }
-
+    
     function rechne10b() {
     	var zahl10aa = document.getElementById("ausgabe10aa").innerHTML;
     	var zahl10ab = document.getElementById("ausgabe10ab").innerHTML;
         var ergebnis10b = document.getElementById("ergebnis10b").value;
-
+        
         if (parseInt(zahl10aa) + parseInt(zahl10ab) == parseInt(ergebnis10b)) {
-
+        
         var x = document.getElementById('ausgabe10b');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe10b');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe10b');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe10b');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl11a() {
 		document.getElementById("zufallszahl11a").innerHTML =
 		Math.floor(Math.random() * (19 - 15 + 1)) + 15;
 	}
-
+	
 	function zufallszahl11b() {
 		document.getElementById("zufallszahl11b").innerHTML =
 		Math.floor(Math.random() * (5 - 1 + 1)) + 1;
 	}
-
+	
     function rechne11a() {
     	var zahl11a = document.getElementById("zufallszahl11a").innerHTML;
     	var zahl11b = document.getElementById("zufallszahl11b").innerHTML;
         var ergebnis11a = document.getElementById("ergebnis11a").value;
-
+        
         if (parseInt(zahl11a) - parseInt(zahl11b) == parseInt(ergebnis11a)) {
-
+        
         var x = document.getElementById('ausgabe11a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe11a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe11a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe11a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
+    
     function rechne11aa() {
     	var zahl11a = document.getElementById("zufallszahl11a").innerHTML;
     	var text = parseInt(zahl11a) - 10
-
+    	
     	var ausgabe = document.getElementById('ausgabe11aa');
 	  		ausgabe.innerHTML = text;
         }
-
+        
     function rechne11ab() {
     	var zahl11b = document.getElementById("zufallszahl11b").innerHTML;
     	var text = parseInt(zahl11b)
-
+    	
     	var ausgabe = document.getElementById('ausgabe11ab');
 	  		ausgabe.innerHTML = text;
         }
-
+    
     function rechne11b() {
     	var zahl11aa = document.getElementById("ausgabe11aa").innerHTML;
     	var zahl11ab = document.getElementById("ausgabe11ab").innerHTML;
         var ergebnis11b = document.getElementById("ergebnis11b").value;
-
+        
         if (parseInt(zahl11aa) - parseInt(zahl11ab) == parseInt(ergebnis11b)) {
-
+        
         var x = document.getElementById('ausgabe11b');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe11b');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe11b');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe11b');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl12a() {
 		document.getElementById("zufallszahl12a").innerHTML =
 		Math.floor(Math.random() * (19 - 15 + 1)) + 15;
 	}
-
+	
 	function zufallszahl12b() {
 		document.getElementById("zufallszahl12b").innerHTML =
 		Math.floor(Math.random() * (5 - 1 + 1)) + 1;
 	}
-
+	
     function rechne12a() {
     	var zahl12a = document.getElementById("zufallszahl12a").innerHTML;
     	var zahl12b = document.getElementById("zufallszahl12b").innerHTML;
         var ergebnis12a = document.getElementById("ergebnis12a").value;
-
+        
         if (parseInt(zahl12a) - parseInt(zahl12b) == parseInt(ergebnis12a)) {
-
+        
         var x = document.getElementById('ausgabe12a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe12a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe12a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe12a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
+    
     function rechne12aa() {
     	var zahl12a = document.getElementById("zufallszahl12a").innerHTML;
     	var text = parseInt(zahl12a) - 10
-
+    	
     	var ausgabe = document.getElementById('ausgabe12aa');
 	  		ausgabe.innerHTML = text;
         }
-
+        
     function rechne12ab() {
     	var zahl12b = document.getElementById("zufallszahl12b").innerHTML;
     	var text = parseInt(zahl12b)
-
+    	
     	var ausgabe = document.getElementById('ausgabe12ab');
 	  		ausgabe.innerHTML = text;
         }
-
+    
     function rechne12b() {
     	var zahl12aa = document.getElementById("ausgabe12aa").innerHTML;
     	var zahl12ab = document.getElementById("ausgabe12ab").innerHTML;
         var ergebnis12b = document.getElementById("ergebnis12b").value;
-
+        
         if (parseInt(zahl12aa) - parseInt(zahl12ab) == parseInt(ergebnis12b)) {
-
+        
         var x = document.getElementById('ausgabe12b');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe12b');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe12b');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe12b');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl13a() {
 		document.getElementById("zufallszahl13a").innerHTML =
 		Math.floor(Math.random() * (89 - 21 + 1)) + 21;
 	}
-
+	
 	function zufallszahl13b() {
 		document.getElementById("zufallszahl13b").innerHTML =
 		Math.floor(Math.random() * (9 - 1 + 1)) + 1;
 	}
-
+	
     function rechne13a() {
     	var zahl13a = document.getElementById("zufallszahl13a").innerHTML;
     	var zahl13b = document.getElementById("zufallszahl13b").innerHTML;
         var ergebnis13a = document.getElementById("ergebnis13a").value;
-
+        
         if (parseInt(zahl13a) + parseInt(zahl13b) == parseInt(ergebnis13a)) {
-
+        
         var x = document.getElementById('ausgabe13a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe13a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe13a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe13a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl14a() {
 		document.getElementById("zufallszahl14a").innerHTML =
 		Math.floor(Math.random() * (89 - 21 + 1)) + 21;
 	}
-
+	
 	function zufallszahl14b() {
 		document.getElementById("zufallszahl14b").innerHTML =
 		Math.floor(Math.random() * (9 - 1 + 1)) + 1;
 	}
-
+	
     function rechne14a() {
     	var zahl14a = document.getElementById("zufallszahl14a").innerHTML;
     	var zahl14b = document.getElementById("zufallszahl14b").innerHTML;
         var ergebnis14a = document.getElementById("ergebnis14a").value;
-
+        
         if (parseInt(zahl14a) + parseInt(zahl14b) == parseInt(ergebnis14a)) {
-
+        
         var x = document.getElementById('ausgabe14a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe14a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe14a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe14a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl15a() {
 		document.getElementById("zufallszahl15a").innerHTML =
 		Math.floor(Math.random() * (89 - 21 + 1)) + 21;
 	}
-
+	
 	function zufallszahl15b() {
 		document.getElementById("zufallszahl15b").innerHTML =
 		Math.floor(Math.random() * (9 - 1 + 1)) + 1;
 	}
-
+	
     function rechne15a() {
     	var zahl15a = document.getElementById("zufallszahl15a").innerHTML;
     	var zahl15b = document.getElementById("zufallszahl15b").innerHTML;
         var ergebnis15a = document.getElementById("ergebnis15a").value;
-
+        
         if (parseInt(zahl15a) - parseInt(zahl15b) == parseInt(ergebnis15a)) {
-
+        
         var x = document.getElementById('ausgabe15a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe15a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe15a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe15a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl16a() {
 		document.getElementById("zufallszahl16a").innerHTML =
 		Math.floor(Math.random() * (89 - 21 + 1)) + 21;
 	}
-
+	
 	function zufallszahl16b() {
 		document.getElementById("zufallszahl16b").innerHTML =
 		Math.floor(Math.random() * (9 - 1 + 1)) + 1;
 	}
-
+	
     function rechne16a() {
     	var zahl16a = document.getElementById("zufallszahl16a").innerHTML;
     	var zahl16b = document.getElementById("zufallszahl16b").innerHTML;
         var ergebnis16a = document.getElementById("ergebnis16a").value;
-
+        
         if (parseInt(zahl16a) - parseInt(zahl16b) == parseInt(ergebnis16a)) {
-
+        
         var x = document.getElementById('ausgabe16a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe16a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe16a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe16a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl17a() {
 		document.getElementById("zufallszahl17a").innerHTML =
 		Math.floor(Math.random() * (49 - 21 + 1)) + 21;
 	}
-
+	
 	function zufallszahl17b() {
 		document.getElementById("zufallszahl17b").innerHTML =
 		Math.floor(Math.random() * (49 - 21 + 1)) + 21;
 	}
-
+	
     function rechne17a() {
     	var zahl17a = document.getElementById("zufallszahl17a").innerHTML;
     	var zahl17b = document.getElementById("zufallszahl17b").innerHTML;
         var ergebnis17a = document.getElementById("ergebnis17a").value;
-
+        
         if (parseInt(zahl17a) + parseInt(zahl17b) == parseInt(ergebnis17a)) {
-
+        
         var x = document.getElementById('ausgabe17a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe17a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe17a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe17a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl18a() {
 		document.getElementById("zufallszahl18a").innerHTML =
 		Math.floor(Math.random() * (49 - 21 + 1)) + 21;
 	}
-
+	
 	function zufallszahl18b() {
 		document.getElementById("zufallszahl18b").innerHTML =
 		Math.floor(Math.random() * (49 - 21 + 1)) + 21;
 	}
-
+	
     function rechne18a() {
     	var zahl18a = document.getElementById("zufallszahl18a").innerHTML;
     	var zahl18b = document.getElementById("zufallszahl18b").innerHTML;
         var ergebnis18a = document.getElementById("ergebnis18a").value;
-
+        
         if (parseInt(zahl18a) + parseInt(zahl18b) == parseInt(ergebnis18a)) {
-
+        
         var x = document.getElementById('ausgabe18a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe18a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe18a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe18a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl19a() {
 		document.getElementById("zufallszahl19a").innerHTML =
 		Math.floor(Math.random() * (99 - 51 + 1)) + 51;
 	}
-
+	
 	function zufallszahl19b() {
 		document.getElementById("zufallszahl19b").innerHTML =
 		Math.floor(Math.random() * (49 - 21 + 1)) + 21;
 	}
-
+	
     function rechne19a() {
     	var zahl19a = document.getElementById("zufallszahl19a").innerHTML;
     	var zahl19b = document.getElementById("zufallszahl19b").innerHTML;
         var ergebnis19a = document.getElementById("ergebnis19a").value;
-
+        
         if (parseInt(zahl19a) - parseInt(zahl19b) == parseInt(ergebnis19a)) {
-
+        
         var x = document.getElementById('ausgabe19a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe19a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe19a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe19a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
      function zufallszahl20a() {
 		document.getElementById("zufallszahl20a").innerHTML =
 		Math.floor(Math.random() * (99 - 51 + 1)) + 51;
 	}
-
+	
 	function zufallszahl20b() {
 		document.getElementById("zufallszahl20b").innerHTML =
 		Math.floor(Math.random() * (49 - 21 + 1)) + 21;
 	}
-
+	
     function rechne20a() {
     	var zahl20a = document.getElementById("zufallszahl20a").innerHTML;
     	var zahl20b = document.getElementById("zufallszahl20b").innerHTML;
         var ergebnis20a = document.getElementById("ergebnis20a").value;
-
+        
         if (parseInt(zahl20a) - parseInt(zahl20b) == parseInt(ergebnis20a)) {
-
+        
         var x = document.getElementById('ausgabe20a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe20a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe20a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe20a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl21a() {
 		document.getElementById("zufallszahl21a").innerHTML =
 		Math.floor(Math.random() * (9 - 2 + 1)) + 2;
 	}
-
+	
 	function zufallszahl21b() {
 		document.getElementById("zufallszahl21b").innerHTML =
 		Math.floor(Math.random() * (9 - 2 + 1)) + 2;
 	}
-
+	
     function rechne21a() {
     	var zahl21a = document.getElementById("zufallszahl21a").innerHTML;
     	var zahl21b = document.getElementById("zufallszahl21b").innerHTML;
         var ergebnis21a = document.getElementById("ergebnis21a").value;
-
+        
         if (parseInt(zahl21a) * parseInt(zahl21b) == parseInt(ergebnis21a)) {
-
+        
         var x = document.getElementById('ausgabe21a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe21a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe21a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe21a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl21c() {
 		document.getElementById("zufallszahl21c").innerHTML =
 		Math.floor(Math.random() * (9 - 2 + 1)) + 2;
 	}
-
+	
 	function zufallszahl21d() {
 		document.getElementById("zufallszahl21d").innerHTML =
 		Math.floor(Math.random() * (9 - 2 + 1)) + 2;
 	}
-
+	
     function rechne21b() {
     	var zahl21c = document.getElementById("zufallszahl21c").innerHTML;
     	var zahl21d = document.getElementById("zufallszahl21d").innerHTML;
         var ergebnis21b = document.getElementById("ergebnis21b").value;
-
+        
         if (parseInt(zahl21c) * parseInt(zahl21d) == parseInt(ergebnis21b)) {
-
+        
         var x = document.getElementById('ausgabe21b');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe21b');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe21b');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe21b');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl21e() {
 		document.getElementById("zufallszahl21e").innerHTML =
 		Math.floor(Math.random() * (9 - 2 + 1)) + 2;
 	}
-
+	
 	function zufallszahl21f() {
 		document.getElementById("zufallszahl21f").innerHTML =
 		Math.floor(Math.random() * (9 - 2 + 1)) + 2;
 	}
-
+	
     function rechne21c() {
     	var zahl21e = document.getElementById("zufallszahl21e").innerHTML;
     	var zahl21f = document.getElementById("zufallszahl21f").innerHTML;
         var ergebnis21c = document.getElementById("ergebnis21c").value;
-
+        
         if (parseInt(zahl21e) * parseInt(zahl21f) == parseInt(ergebnis21c)) {
-
+        
         var x = document.getElementById('ausgabe21c');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe21c');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe21c');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe21c');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl21g() {
 		document.getElementById("zufallszahl21g").innerHTML =
 		Math.floor(Math.random() * (9 - 2 + 1)) + 2;
 	}
-
+	
 	function zufallszahl21h() {
 		document.getElementById("zufallszahl21h").innerHTML =
 		Math.floor(Math.random() * (9 - 2 + 1)) + 2;
 	}
-
+	
     function rechne21d() {
     	var zahl21g = document.getElementById("zufallszahl21g").innerHTML;
     	var zahl21h = document.getElementById("zufallszahl21h").innerHTML;
         var ergebnis21d = document.getElementById("ergebnis21d").value;
-
+        
         if (parseInt(zahl21g) * parseInt(zahl21h) == parseInt(ergebnis21d)) {
-
+        
         var x = document.getElementById('ausgabe21d');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe21d');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe21d');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe21d');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl22a() {
 		document.getElementById("zufallszahl22a").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*9;
 	}
-
+	
 	function zufallszahl22b() {
 		document.getElementById("zufallszahl22b").innerHTML =
 		9;
 	}
-
+	
     function rechne22a() {
     	var zahl22a = document.getElementById("zufallszahl22a").innerHTML;
     	var zahl22b = document.getElementById("zufallszahl22b").innerHTML;
         var ergebnis22a = document.getElementById("ergebnis22a").value;
-
+        
         if (parseInt(zahl22a) / parseInt(zahl22b) == parseInt(ergebnis22a)) {
-
+        
         var x = document.getElementById('ausgabe22a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe22a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe22a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe22a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl22c() {
 		document.getElementById("zufallszahl22c").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*8;
 	}
-
+	
 	function zufallszahl22d() {
 		document.getElementById("zufallszahl22d").innerHTML =
 		8;
 	}
-
+	
     function rechne22b() {
     	var zahl22c = document.getElementById("zufallszahl22c").innerHTML;
     	var zahl22d = document.getElementById("zufallszahl22d").innerHTML;
         var ergebnis22b = document.getElementById("ergebnis22b").value;
-
+        
         if (parseInt(zahl22c) / parseInt(zahl22d) == parseInt(ergebnis22b)) {
-
+        
         var x = document.getElementById('ausgabe22b');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe22b');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe22b');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe22b');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl22e() {
 		document.getElementById("zufallszahl22e").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*7;
 	}
-
+	
 	function zufallszahl22f() {
 		document.getElementById("zufallszahl22f").innerHTML =
 		7;
 	}
-
+	
     function rechne22c() {
     	var zahl22e = document.getElementById("zufallszahl22e").innerHTML;
     	var zahl22f = document.getElementById("zufallszahl22f").innerHTML;
         var ergebnis22c = document.getElementById("ergebnis22c").value;
-
+        
         if (parseInt(zahl22e) / parseInt(zahl22f) == parseInt(ergebnis22c)) {
-
+        
         var x = document.getElementById('ausgabe22c');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe22c');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe22c');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe22c');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl22g() {
 		document.getElementById("zufallszahl22g").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*6;
 	}
-
+	
 	function zufallszahl22h() {
 		document.getElementById("zufallszahl22h").innerHTML =
 		6;
 	}
-
+	
     function rechne22d() {
     	var zahl22g = document.getElementById("zufallszahl22g").innerHTML;
     	var zahl22h = document.getElementById("zufallszahl22h").innerHTML;
         var ergebnis22d = document.getElementById("ergebnis22d").value;
-
+        
         if (parseInt(zahl22g) / parseInt(zahl22h) == parseInt(ergebnis22d)) {
-
+        
         var x = document.getElementById('ausgabe22d');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe22d');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe22d');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe22d');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl23a() {
 		document.getElementById("zufallszahl23a").innerHTML =
 		Math.floor(Math.random() * ((499 - 111 + 1)) + 111);
 	}
-
+	
 	function zufallszahl23b() {
 		document.getElementById("zufallszahl23b").innerHTML =
 		Math.floor(Math.random() * ((499 - 111 + 1)) + 111);
 	}
-
+	
     function rechne23a() {
     	var zahl23a = document.getElementById("zufallszahl23a").innerHTML;
     	var zahl23b = document.getElementById("zufallszahl23b").innerHTML;
         var ergebnis23a = document.getElementById("ergebnis23a").value;
-
+        
         if (parseInt(zahl23a) + parseInt(zahl23b) == parseInt(ergebnis23a)) {
-
+        
         var x = document.getElementById('ausgabe23a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe23a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe23a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe23a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl24a() {
 		document.getElementById("zufallszahl24a").innerHTML =
 		Math.floor(Math.random() * ((499 - 111 + 1)) + 111);
 	}
-
+	
 	function zufallszahl24b() {
 		document.getElementById("zufallszahl24b").innerHTML =
 		Math.floor(Math.random() * ((499 - 111 + 1)) + 111);
 	}
-
+	
     function rechne24a() {
     	var zahl24a = document.getElementById("zufallszahl24a").innerHTML;
     	var zahl24b = document.getElementById("zufallszahl24b").innerHTML;
         var ergebnis24a = document.getElementById("ergebnis24a").value;
-
+        
         if (parseInt(zahl24a) + parseInt(zahl24b) == parseInt(ergebnis24a)) {
-
+        
         var x = document.getElementById('ausgabe24a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe24a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe24a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe24a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl25a() {
 		document.getElementById("zufallszahl25a").innerHTML =
 		Math.floor(Math.random() * ((999 - 511 + 1)) + 511);
 	}
-
+	
 	function zufallszahl25b() {
 		document.getElementById("zufallszahl25b").innerHTML =
 		Math.floor(Math.random() * ((499 - 111 + 1)) + 111);
 	}
-
+	
     function rechne25a() {
     	var zahl25a = document.getElementById("zufallszahl25a").innerHTML;
     	var zahl25b = document.getElementById("zufallszahl25b").innerHTML;
         var ergebnis25a = document.getElementById("ergebnis25a").value;
-
+        
         if (parseInt(zahl25a) - parseInt(zahl25b) == parseInt(ergebnis25a)) {
-
+        
         var x = document.getElementById('ausgabe25a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe25a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe25a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe25a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahl26a() {
 		document.getElementById("zufallszahl26a").innerHTML =
 		Math.floor(Math.random() * ((999 - 511 + 1)) + 511);
 	}
-
+	
 	function zufallszahl26b() {
 		document.getElementById("zufallszahl26b").innerHTML =
 		Math.floor(Math.random() * ((499 - 111 + 1)) + 111);
 	}
-
+	
     function rechne26a() {
     	var zahl26a = document.getElementById("zufallszahl26a").innerHTML;
     	var zahl26b = document.getElementById("zufallszahl26b").innerHTML;
         var ergebnis26a = document.getElementById("ergebnis26a").value;
-
+        
         if (parseInt(zahl26a) - parseInt(zahl26b) == parseInt(ergebnis26a)) {
-
+        
         var x = document.getElementById('ausgabe26a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe26a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabe26a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabe26a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahlx27a() {
 		document.getElementById("zufallszahlx27a").innerHTML =
 		Math.floor(Math.random() * ((99 - 21 + 1)) + 21);
 	}
-
+	
 	function zufallszahlx27b() {
 		document.getElementById("zufallszahlx27b").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
 	}
-
+	
     function rechnex27a() {
     	var zahlx27a = document.getElementById("zufallszahlx27a").innerHTML;
     	var zahlx27b = document.getElementById("zufallszahlx27b").innerHTML;
         var ergebnisx27a = document.getElementById("ergebnisx27a").value;
-
+        
         if (parseInt(zahlx27a) * parseInt(zahlx27b) == parseInt(ergebnisx27a)) {
-
+        
         var x = document.getElementById('ausgabex27a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex27a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex27a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex27a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahlx28a() {
 		document.getElementById("zufallszahlx28a").innerHTML =
 		Math.floor(Math.random() * ((999 - 111 + 1)) + 111);
 	}
-
+	
 	function zufallszahlx28b() {
 		document.getElementById("zufallszahlx28b").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
 	}
-
+	
     function rechnex28a() {
     	var zahlx28a = document.getElementById("zufallszahlx28a").innerHTML;
     	var zahlx28b = document.getElementById("zufallszahlx28b").innerHTML;
         var ergebnisx28a = document.getElementById("ergebnisx28a").value;
-
+        
         if (parseInt(zahlx28a) * parseInt(zahlx28b) == parseInt(ergebnisx28a)) {
-
+        
         var x = document.getElementById('ausgabex28a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex28a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex28a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex28a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahlx29a() {
 		document.getElementById("zufallszahlx29a").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+	
 	function zufallszahlx29b() {
 		document.getElementById("zufallszahlx29b").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+    
     function zufallszahlx29c() {
 		document.getElementById("zufallszahlx29c").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+	
 	function zufallszahlx29d() {
 		document.getElementById("zufallszahlx29d").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+	
 	function zufallszahlx29e() {
 		document.getElementById("zufallszahlx29e").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+	
 	function zufallszahlx29f() {
 		document.getElementById("zufallszahlx29f").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+	
 	function rechnex29a() {
     	var zahlx29a = document.getElementById("zufallszahlx29a").innerHTML;
         var zahlx29b = document.getElementById("zufallszahlx29b").innerHTML;
@@ -3806,31 +3818,31 @@
         var zahlx29e = document.getElementById("zufallszahlx29e").innerHTML;
         var zahlx29f = document.getElementById("zufallszahlx29f").innerHTML;
         var ergebnisx29a = document.getElementById("ergebnisx29a").value;
-
-        if ((parseInt(zahlx29a) * 100 + parseInt(zahlx29b) * 10 +
+        
+        if ((parseInt(zahlx29a) * 100 + parseInt(zahlx29b) * 10 + 
         	parseInt(zahlx29c)) * (parseInt(zahlx29d) * 100 +
         	parseInt(zahlx29e) * 10 + parseInt(zahlx29f))
         	== parseInt(ergebnisx29a))   {
-
+        
         var x = document.getElementById('ausgabex29a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex29a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex29a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex29a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahlx30() {
 		document.getElementById("zufallszahlx30a").innerHTML =
 		Math.floor(Math.random() * (9 - 1 + 1)) + 1;
@@ -3843,7 +3855,7 @@
 		document.getElementById("zufallszahlx30e").innerHTML =
 		Math.floor(Math.random() * (9 - 3 + 1)) + 3;
 	}
-
+	
 	function rechnex30a() {
     	var zahlx30a = document.getElementById("zufallszahlx30a").innerHTML;
         var zahlx30b = document.getElementById("zufallszahlx30b").innerHTML;
@@ -3852,274 +3864,274 @@
         var zahlx30e = document.getElementById("zufallszahlx30e").innerHTML;
         var ergebnisx30a = document.getElementById("ergebnisx30a").value;
         var restx30a = document.getElementById("restx30a").value;
-
-        if (parseInt(zahlx30a) * 1000 + parseInt(zahlx30b) * 100 +
+        
+        if (parseInt(zahlx30a) * 1000 + parseInt(zahlx30b) * 100 + 
         	parseInt(zahlx30c) * 10 + parseInt(zahlx30d)
         	== parseInt(zahlx30e) * parseInt(ergebnisx30a) + parseInt(restx30a))   {
-
+        
         var x = document.getElementById('ausgabex30a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex30a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex30a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex30a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function zufallszahlx31() {
 		var zahlx31aa = Math.floor(Math.random() * ((9 - 2 + 1)) + 2);
-
+		
 		document.getElementById("zufallszahlx31a").innerHTML =
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahlx31aa*100 +
-		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahlx31aa*10 +
+		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahlx31aa*10 + 
 		Math.floor(Math.random() * ((9 - 2 + 1)) + 2)*zahlx31aa;
 		document.getElementById("zufallszahlx31b").innerHTML = zahlx31aa;
 	}
-
-
+	
+	
     function rechnex31a() {
     	var zahlx31a = document.getElementById("zufallszahlx31a").innerHTML;
     	var zahlx31b = document.getElementById("zufallszahlx31b").innerHTML;
         var ergebnisx31a = document.getElementById("ergebnisx31a").value;
-
+        
         if (parseInt(zahlx31a) / parseInt(zahlx31b) == parseInt(ergebnisx31a)) {
-
+        
         var x = document.getElementById('ausgabex31a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex31a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex31a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex31a');
 	  		ausgabe.innerHTML = text;
         }
-    }
-
-
+    }  
+    
+    
     function rechnex32a() {
     	var zahlx32a = document.getElementById("zahlx32a").value;
     	var zahlx32b = document.getElementById("zahlx32b").innerHTML;
         var ergebnisx32a = document.getElementById("ergebnisx32a").value;
-
+        
         if (parseInt(zahlx32a) / parseInt(zahlx32b) == parseInt(ergebnisx32a)) {
-
+        
         var x = document.getElementById('ausgabex32a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex32a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex32a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex32a');
 	  		ausgabe.innerHTML = text;
         }
-    }
-
-
+    }  
+    
+    
     function rechnex33a() {
     	var zahlx33a = document.getElementById("zahlx33a").value;
     	var zahlx33b = document.getElementById("zahlx33b").innerHTML;
         var ergebnisx33a = document.getElementById("ergebnisx33a").value;
-
+        
         if (parseInt(zahlx33a) / parseInt(zahlx33b) == parseInt(ergebnisx33a)) {
-
+        
         var x = document.getElementById('ausgabex33a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex33a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex33a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex33a');
 	  		ausgabe.innerHTML = text;
         }
-    }
-
-
+    } 
+    
+    
     function rechnex34a() {
     	var zahlx34a = document.getElementById("zahlx34a").value;
     	var zahlx34b = document.getElementById("zahlx34b").innerHTML;
         var ergebnisx34a = document.getElementById("ergebnisx34a").value;
-
+        
         if (parseInt(zahlx34a) / parseInt(zahlx34b) == parseInt(ergebnisx34a)) {
-
+        
         var x = document.getElementById('ausgabex34a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex34a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex34a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex34a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function rechnex35a() {
     	var zahlx35a = document.getElementById("zahlx35a").value;
     	var zahlx35b = document.getElementById("zahlx35b").innerHTML;
         var ergebnisx35a = document.getElementById("ergebnisx35a").value;
-
+        
         if (parseInt(zahlx35a) / parseInt(zahlx35b) == parseInt(ergebnisx35a)) {
-
+        
         var x = document.getElementById('ausgabex35a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex35a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex35a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex35a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function rechnex36a() {
     	var zahlx36a = document.getElementById("zahlx36a").value;
     	var zahlx36b = document.getElementById("zahlx36b").innerHTML;
         var ergebnisx36a = document.getElementById("ergebnisx36a").value;
-
+        
         if (parseInt(zahlx36a) / parseInt(zahlx36b) == parseInt(ergebnisx36a)) {
-
+        
         var x = document.getElementById('ausgabex36a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex36a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex36a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex36a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function rechnex37a() {
     	var zahlx37a = document.getElementById("zahlx37a").value;
     	var zahlx37b = document.getElementById("zahlx37b").innerHTML;
         var ergebnisx37a = document.getElementById("ergebnisx37a").value;
-
+        
         if (parseInt(zahlx37a) / parseInt(zahlx37b) == parseInt(ergebnisx37a)) {
-
+        
         var x = document.getElementById('ausgabex37a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex37a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex37a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex37a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function rechnex38a() {
     	var zahlx38a = document.getElementById("zahlx38a").value;
     	var zahlx38b = document.getElementById("zahlx38b").innerHTML;
         var ergebnisx38a = document.getElementById("ergebnisx38a").value;
-
+        
         if (parseInt(zahlx38a) / parseInt(zahlx38b) == parseInt(ergebnisx38a)) {
-
+        
         var x = document.getElementById('ausgabex38a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex38a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex38a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex38a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
     function rechnex39a() {
     	var zahlx39a = document.getElementById("zahlx39a").value;
     	var zahlx39b = document.getElementById("zahlx39b").innerHTML;
         var ergebnisx39a = document.getElementById("ergebnisx39a").value;
-
+        
         if (parseInt(zahlx39a) / parseInt(zahlx39b) == parseInt(ergebnisx39a)) {
-
+        
         var x = document.getElementById('ausgabex39a');
     	x.style.background = "green";
-
+    	
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabex39a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var x = document.getElementById('ausgabex39a');
     	x.style.background = "red";
-
+    	
         var text = 'Nochmal!';
 	  		var ausgabe = document.getElementById('ausgabex39a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
+  
 </script>
 
 </body>
