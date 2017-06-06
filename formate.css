@@ -6,6 +6,7 @@ body {
 	margin: 1em auto;
 	background-attachment:fixed;
 	background-size:cover;
+	z-index:-1000;
 }
 
 #Mathe {
@@ -13,7 +14,7 @@ body {
 }
 
 #Start {
-		background:url("StartseiteBackground.jpeg") no-repeat center center;
+		background:url("StartseiteBackground.jpeg") no-repeat top center;
 }
 
 #Musik {
@@ -24,6 +25,7 @@ header {
 	position: relative;
 	padding: 2em;
 	padding-left: 2em;
+	z-index:1000;
 }
 
 #LB {
@@ -107,7 +109,6 @@ nav ul ul {
 	padding: 0;
 	position: absolute;
 	top: 2em;
-	z-index: 1;
 }
 nav div {
 	text-decoration: none;
@@ -119,7 +120,6 @@ nav div {
 
 nav ul li:hover ul {
 	font: inherit;
-	z-index: auto;
 	background-color:black;
 }
 
@@ -136,7 +136,8 @@ main {
 	margin: .5em 0;
 	margin-left: 0em;
 	padding: .1em .5em;
-	min-height: 15em;
+	min-height: 50em;
+	z-index:-1000;
 }
 
 table {
@@ -150,7 +151,24 @@ table.musik {
 	padding: 1%;
 	margin: 0;
 	}
+	
+div {
+	position:relative;
+}
 
+article{
+	padding-right:15em;
+	position:relativ;
+	/*background-color:hsla(122, 100%, 25%, 1);*/
+	background:url("blackboard.jpg") no-repeat center center;
+	width:50em;
+	height:47em;
+}
+
+.z-index{
+	z-index:-100;
+}
+	
 td.musik	{
 	border: 1px solid;
 	padding: 7px;
