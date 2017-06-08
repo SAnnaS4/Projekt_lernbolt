@@ -130,7 +130,7 @@
  </header> 	
   	<main class="aD">
 <div>
-<article>
+<article class="element1" id="MA1">
 <p>Aufgabe 1</p>
 <table>
 	<tr>
@@ -166,11 +166,11 @@
         <td><button onclick="rechne1d()" id="ausgabe1d">Pr&uuml;fe!</button></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunction('MA1','MA2')">weiter</button>
 </article>
 
 
-<article>
+<article id="MA2">
 <p>Aufgabe 2</p>
 <table>
 	<tr>
@@ -206,11 +206,13 @@
 		<td><button onclick="rechne2d()" id="ausgabe2d">Pr&uuml;fe!</button></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA1','MA2')">zurueck</button>
+<button onclick="myFunction('MA2','MA3')">weiter</button>
+
 </article>
 
 
-<article>
+<article id='MA3'>
 <p>Aufgabe 3</p>
 <table>
 	<tr>
@@ -246,11 +248,12 @@
 		<td><button onclick="rechne3d()" id="ausgabe3d">Pr&uuml;fe!</button></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA2','MA3')">zurueck</button>
+<button onclick="myFunction('MA3','MA4')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA4'>
 <p>Aufgabe 4</p>
 <table>
 	<tr>
@@ -286,11 +289,12 @@
 		<td><button onclick="rechne4d()" id="ausgabe4d">Pr&uuml;fe!</button></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA3','MA4')">zurueck</button>
+<button onclick="myFunction('MA4','MA5')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA5'>
 <p>Aufgabe 5 <br> (Erst bis zur 10, dann weiter.) </p>
 <table>
 	<tr>
@@ -317,11 +321,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA4','MA5')">zurueck</button>
+<button onclick="myFunction('MA5','MA6')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA6'>
 <p>Aufgabe 6 <br> (Erst bis zur 10, dann weiter.) </p>
 <table>
 	<tr>
@@ -348,11 +353,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA5','MA6')">zurueck</button>
+<button onclick="myFunction('MA6','MA7')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA7'>
 <p>Aufgabe 7 <br> (Zurueck bis zur 10, dann weiter.) </p>
 <table>
 	<tr>
@@ -379,11 +385,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA6','MA7')">zurueck</button>
+<button onclick="myFunction('MA7','MA8')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA8'>
 <p>Aufgabe 8 <br> (Zurueck bis zur 10, dann weiter.) </p>
 <table>
 	<tr>
@@ -410,11 +417,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA7','MA8')">zurueck</button>
+<button onclick="myFunction('MA8','MA9')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA9'>
 <p>Aufgabe 9 </p>
 <table>
 	<tr>
@@ -434,11 +442,12 @@
 		<td><button onclick="rechne9b()" id="ausgabe9b">Pr&uuml;fe!</button></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA8','MA9')">zurueck</button>
+<button onclick="myFunction('MA9','MA10')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA10'>
 <p>Aufgabe 10 </p>
 <table>
 	<tr>
@@ -458,11 +467,12 @@
 		<td><button onclick="rechne10b()" id="ausgabe10b">Pr&uuml;fe!</button></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA9','MA10')">zurueck</button>
+<button onclick="myFunction('MA10','MA11')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA11'>
 <p>Aufgabe 11</p>
 <table>
 	<tr>
@@ -482,11 +492,12 @@
 		<td><button onclick="rechne11b()" id="ausgabe11b">Pr&uuml;fe!</button></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA10','MA11')">zurueck</button>
+<button onclick="myFunction('MA11','MA12')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA12'>
 <p>Aufgabe 12 </p>
 <table>
 	<tr>
@@ -506,11 +517,12 @@
 		<td><button onclick="rechne12b()" id="ausgabe12b">Pr&uuml;fe!</button></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA11','MA12')">zurueck</button>
+<button onclick="myFunction('MA12','MA13')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA13'>
 <p>Aufgabe 13 <br> (Addiere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -536,11 +548,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA12','MA13')">zurueck</button>
+<button onclick="myFunction('MA13','MA14')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA14'>
 <p>Aufgabe 14 <br> (Addiere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -566,11 +579,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA13','MA14')">zurueck</button>
+<button onclick="myFunction('MA14','MA15')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA15'>
 <p>Aufgabe 15 <br> (Subtrahiere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -596,11 +610,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA14','MA15')">zurueck</button>
+<button onclick="myFunction('MA15','MA16')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA16'>
 <p>Aufgabe 16 <br> (Subtrahiere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -626,11 +641,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA15','MA16')">zurueck</button>
+<button onclick="myFunction('MA16','MA17')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA17'>
 <p>Aufgabe 17 <br> (Addiere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -656,11 +672,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA16','MA17')">zurueck</button>
+<button onclick="myFunction('MA17','MA18')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA18'>
 <p>Aufgabe 18 <br> (Addiere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -686,11 +703,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA17','MA18')">zurueck</button>
+<button onclick="myFunction('MA18','MA19')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA19'>
 <p>Aufgabe 19 <br> (Subtrahiere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -716,11 +734,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA18','MA19')">zurueck</button>
+<button onclick="myFunction('MA19','MA20')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA20'>
 <p>Aufgabe 20 <br> (Subtrahiere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -746,11 +765,12 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA19','MA20')">zurueck</button>
+<button onclick="myFunction('MA20','MA21')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA21'>
 <p>Aufgabe 21 <br> (Multipliziere!)</p>
 <table>
 	<tr>
@@ -786,11 +806,12 @@
 		<td><button onclick="rechne21d()" id="ausgabe21d">Pr&uuml;fe!</button></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA20','MA21')">zurueck</button>
+<button onclick="myFunction('MA21','MA22')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA22'>
 <p>Aufgabe 22 <br> (Dividiere!)</p>
 <table>
 	<tr>
@@ -826,11 +847,12 @@
 		<td><button onclick="rechne22d()" id="ausgabe22d">Pr&uuml;fe!</button></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA21','MA22')">zurueck</button>
+<button onclick="myFunction('MA22','MA23')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA23'>
 <p>Aufgabe 23 <br> (Addiere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -863,11 +885,12 @@
 		<td><input size="8"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA22','MA23')">zurueck</button>
+<button onclick="myFunction('MA23','MA24')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA24'>
 <p>Aufgabe 24 <br> (Addiere schriftlich!)</p>
 <table>
 	<tr>
@@ -897,11 +920,12 @@
 		<td><input size="2"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA23','MA24')">zurueck</button>
+<button onclick="myFunction('MA24','MA25')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA25'>
 <p>Aufgabe 25 <br> (Subtrahiere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -934,11 +958,12 @@
 		<td><input size="8"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA24','MA25')">zurueck</button>
+<button onclick="myFunction('MA25','MA26')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA26'>
 <p>Aufgabe 26 <br> (Subtrahiere schriftlich!)</p>
 <table>
 	<tr>
@@ -968,11 +993,12 @@
 		<td><input size="2"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA25','MA26')">zurueck</button>
+<button onclick="myFunction('MA26','MA27')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA27'>
 <p>Aufgabe 27 <br> (Multipliziere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -998,11 +1024,12 @@
 		<td><input size="3"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA26','MA27')">zurueck</button>
+<button onclick="myFunction('MA27','MA28')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA28'>
 <p>Aufgabe 28 <br> (Multipliziere halbschriftlich!)</p>
 <table>
 	<tr>
@@ -1035,11 +1062,12 @@
 		<td><input size="3"></td>
 	</tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA27','MA28')">zurueck</button>
+<button onclick="myFunction('MA28','MA29')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA29'>
 <p> Aufgabe 29 <br> (Multipliziere schriftliche!)</p>
 <table>
 	<tr>
@@ -1091,11 +1119,12 @@
     	<td><input size="2"></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA28','MA29')">zurueck</button>
+<button onclick="myFunction('MA29','MA30')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA30'>
 <p> Aufgabe 30 <br> (Dividiere schriftlich!) </p>
 <table>
 	<tr>
@@ -1151,10 +1180,11 @@
     	<td class="border2"><input size="2"></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA29','MA30')">zurueck</button>
+<button onclick="myFunction('MA30','MA31')">weiter</button>
 </article>
 
-<article>
+<article id='MA31'>
 <p> Aufgabe 31 <br> (Dividiere schriftlich!) </p>
 <table>
 	<tr>
@@ -1217,10 +1247,11 @@
     	<td class="border2"><input size="1"></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA30','MA31')">zurueck</button>
+<button onclick="myFunction('MA31','MA32')">weiter</button>
 </article>
 
-<article>
+<article id='MA32'>
 <p> Aufgabe 32 <br> (Finde eine 6-stellige Zahl, die durch 1 teilbar ist.) <br>
 					(Jede Ziffer soll verschieden.) </p>
 <table>
@@ -1318,10 +1349,11 @@
     	<td class="border2"><input size="1"></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA31','MA32')">zurueck</button>
+<button onclick="myFunction('MA32','MA33')">weiter</button>
 </article>
 
-<article>
+<article id='MA33'>
 <p> Aufgabe 33 <br> (Finde eine 6-stellige Zahl, die durch 2 teilbar ist.) <br>
 					(Jede Ziffer soll verschieden.) </p>
 <table>
@@ -1419,11 +1451,12 @@
     	<td class="border2"><input size="1"></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA32','MA33')">zurueck</button>
+<button onclick="myFunction('MA33','MA34')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA34'>
 <p> Aufgabe 34 <br> (Finde eine 6-stellige Zahl, die durch 3 teilbar ist.) <br>
 					(Jede Ziffer soll verschieden.) </p>
 <table>
@@ -1521,11 +1554,12 @@
     	<td class="border2"><input size="1"></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA33','MA34')">zurueck</button>
+<button onclick="myFunction('MA34','MA35')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA35'>
 <p> Aufgabe 35 <br> (Finde eine 6-stellige Zahl, die durch 4 teilbar ist.) <br>
 					(Jede Ziffer soll verschieden.) </p>
 <table>
@@ -1623,11 +1657,12 @@
     	<td class="border2"><input size="1"></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA34','MA35')">zurueck</button>
+<button onclick="myFunction('MA35','MA36')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA36'>
 <p> Aufgabe 36 <br> (Finde eine 6-stellige Zahl, die durch 5 teilbar ist.) <br>
 					(Jede Ziffer soll verschieden.) </p>
 <table>
@@ -1725,11 +1760,12 @@
     	<td class="border2"><input size="1"></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA35','MA36')">zurueck</button>
+<button onclick="myFunction('MA36','MA37')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA37'>
 <p> Aufgabe 37 <br> (Finde eine 6-stellige Zahl, die durch 6 teilbar ist.) <br>
 					(Jede Ziffer soll verschieden.) </p>
 <table>
@@ -1827,11 +1863,12 @@
     	<td class="border2"><input size="1"></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA36','MA37')">zurueck</button>
+<button onclick="myFunction('MA37','MA38')">weiter</button>
 </article>
 
 
-<article>
+<article id='MA38'>
 <p> Aufgabe 38 <br> (Finde eine 6-stellige Zahl, die durch 8 teilbar ist.) <br>
 					(Jede Ziffer soll verschieden.) </p>
 <table>
@@ -1929,11 +1966,12 @@
     	<td class="border2"><input size="1"></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA37','MA38')">zurueck</button>
+<button onclick="myFunction('MA38','MA39')">weiter</button>
 </article>
 
 
-<article id='39'>
+<article id='MA39'>
 <p> Aufgabe 39 <br> (Finde eine 6-stellige Zahl, die durch 9 teilbar ist.) <br>
 					(Jede Ziffer soll verschieden.) </p>
 <table>
@@ -2031,7 +2069,7 @@
     	<td class="border2"><input size="1"></td>
     </tr>
 </table>
-<button type="button" id="z-index">weiter</button>
+<button onclick="myFunctionZ('MA38','MA39')">zurueck</button>
 </article>
 </div>
 	</main>
@@ -2045,12 +2083,18 @@
   	</footer>
 	
 	
- <script src='https://code.jquery.com/jquery-3.1.0.min.js'>
-   $('#z-index').on('click',indexAendern());
-   function indexAendern(){
-   §('.39').toggleClass('z-index'); 
- }
- </script> 
+ <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+
+ <script>
+function myFunction(elmt1,elmt2) {
+	  document.getElementById(elmt1).style.zIndex="-2";
+	  document.getElementById(elmt2).style.zIndex="2";
+}
+function myFunctionZ(elmt2,elmt1) {
+	  document.getElementById(elmt1).style.zIndex="-2";
+	  document.getElementById(elmt2).style.zIndex="2";
+}
+</script>
 
 <script>
 
