@@ -30,7 +30,7 @@ header {
 
 #LB {
 	font-size:15em;
-}
+} /*in keiner Datei vorhanden*/
 
 #StartH {
 	margin: .5em 0;
@@ -38,12 +38,12 @@ header {
 	background-color:hsla(122, 100%, 25%, 0.7);
 	color:white;
 	height: 2em;
-}
+} /*nur auf Startseite*/
 
 #StartN {
 	color:white;
 	display: inline;
-}
+} /*nur auf Startseite*/
 
 /*allgemeines Design*/
 .aD {
@@ -79,29 +79,24 @@ h1 {
 }
 
 nav {
-	float: top;
-	width: 1;
-	list-style-type: none;
+	/*width: 1;*/
+	/*list-style-type: none;
+	/*display: inline;*/
+	display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+	margin-bottom: 1em;
+	padding: .5em;
+	background-color:hsla(122, 100%, 25%, 0.7);
+
 }
 
-ol		{
-	list-style-type: none;
-		}
-		
 nav ul{
 	text-align: center;
-	display: inline;
 	/*text-align: inline-block;*/
-}
 
-nav li {
-	display: inline;
-	text-align: inline-block;
-	min-width: 8em;
-	float: left;
-	list-style: none;
 }
-/* Unternavigation ausblenden */
 
 nav ul ul {
 	font: 0/0 serif;
@@ -109,36 +104,54 @@ nav ul ul {
 	padding: 0;
 	position: absolute;
 	top: 2em;
+	z-index: 1;
+
 }
-nav div {
+
+nav li {
+	text-align: inline-block;
+	min-width: 8em;
+	float: left;
+	list-style: none;
+}
+/* Unternavigation ausblenden */
+
+/*nav div {
 	text-decoration: none;
 	padding: .5em .4em;
 	margin-right:20em;
-}
+}				nicht existend auf ieiner Seite!*/
 
 /*  Unternavigation einblenden */
 
 nav ul li:hover ul {
 	font: inherit;
-	background-color:black;
+	z-index: auto;
+	background-color:rgba(0, 0, 0, 0.5);
+
 }
 
 nav ul ul li {
 	display: block;
 	float: none;
-	margin-bottom: 0.2em;
+	margin: 0.5em 0.5em;
 }
 
-main {
+ol		{
+	list-style-type: none;
+		} /*nur in Musik.html */
+
+section {
 	display: block;
 	/* noch fÃ¼r IE 8-11 nÃ¶tig */
 
-	margin: .5em 0;
+	margin: 4em 0; /*abstand zum header*/
 	margin-left: 0em;
 	padding: .1em .5em;
 	min-height: 50em;
 	z-index:-1000;
 }
+
 
 table {
 	padding: 1%;
@@ -212,8 +225,11 @@ article {
 	}
 
 footer {
-
-	margin: .5em 0;
+	display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 0.5em;
 	padding: .5em;
 }
 
@@ -227,8 +243,8 @@ a {
 nav a, nav span {
 	display: block;
 	text-decoration: none;
-	padding: .5em .4em;
-	margin-right:1em;
+	/*padding: .5em .4em;
+	margin-right:1em; */
 }
 
 nav a:focus {
@@ -244,10 +260,15 @@ nav a:hover {
 
 nav a:active,
 a.active {
-	background: #580E0E;
+	background: hsla(122, 100%, 25%, 0);
 	color: #BAB58C;
 }
 
 footer span {
 	display: block;
+}
+
+footer a:hover{
+	background: hsla(122, 100%, 25%, 0);
+	color: #AEFFAD;
 }
