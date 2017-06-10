@@ -17,24 +17,25 @@
 				zufallszahl2c(),
 				zufallszahl2d(),
 				zufallszahl2e()">
-
+				
 <header class="aD">
 <h1>Schriftliche Division mit Rest</h1>
-  <nav>
-    <ul>
-        <li> <a href="Startseite.html"> Startseite </a><li>
-        <li> <a href="musik.html"> Musik </a> </li>
-        <li> <a href="mathe.html"> Mathe </a>
-        <ul>
-               <li> <a href="Plusaufgaben_bis_10.html"> Zahlenraum bis 10 - Plusaufgaben </a> </li>
-               <li> <a href="HalbhandschriftlicheMultiplikation.html"> Halbschriftliche Multiplikation </a> </li>
-               <li>  <a href="SchriftlicheMultiplikation.html"> Schriftliche Multiplikation </a> </li>
-               <li> <a href="HalbschriftlicheDivision.html"> Halbschriftliche Division </a> </li>
-               <li> <a href="Schriftliche_Division_mit_Rest.html"> Schriftliche Division mit Rest </a> </li>
-       </ul>
-       </li>
-     </ul>
-   </nav>
+   	<nav>
+		<ul>
+		     <li> <a href="Startseite.html"> Startseite </a><li>
+			 <li> <a href="musik.html"> Musik </a> </li>
+  			 <li> <a href="mathe.html"> Mathe </a> 
+        			<ul>
+					  <li> <a href="Plusaufgaben_bis_10.html"> Zahlenraum bis 10 - Plusaufgaben </a> </li>
+				      <li> <a href="HalbhandschriftlicheMultiplikation.html"> Halbschriftliche Multiplikation </a> </li>
+				   	  <li>  <a href="SchriftlicheMultiplikation.html"> Schriftliche Multiplikation </a> </li>
+			    	  <li> <a href="HalbschriftlicheDivision.html"> Halbschriftliche Division </a> </li>
+					  <li> <a href="Sschriftliche_Division_mit_Rest.html"> Schriftliche Division mit Rest </a> </li>
+					 </ul>
+			</li>
+		
+					  
+  	</nav>
 	</header>
 
 <main class="aD">
@@ -153,8 +154,8 @@
 </article>
 </main>
 
-
   	<footer class="aD">
+
       <nav>
         <a href="Impressum.html">Impressum & Haftungshinweis</a>
       </nav>
@@ -166,27 +167,27 @@ function zufallszahl1a() {
 		document.getElementById("zufallszahl1a").innerHTML =
 		Math.floor(Math.random() * (9 - 1 + 1)) + 1;
 	}
-
+	
 	function zufallszahl1b() {
 		document.getElementById("zufallszahl1b").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+    
     function zufallszahl1c() {
 		document.getElementById("zufallszahl1c").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+	
 	function zufallszahl1d() {
 		document.getElementById("zufallszahl1d").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+	
 	function zufallszahl1e() {
 		document.getElementById("zufallszahl1e").innerHTML =
 		Math.floor(Math.random() * (9 - 3 + 1)) + 3;
 	}
-
+	
 	function rechne1a() {
     	var zahl1a = document.getElementById("zufallszahl1a").innerHTML;
         var zahl1b = document.getElementById("zufallszahl1b").innerHTML;
@@ -195,49 +196,49 @@ function zufallszahl1a() {
         var zahl1e = document.getElementById("zufallszahl1e").innerHTML;
         var ergebnis1a = document.getElementById("ergebnis1a").value;
         var rest1a = document.getElementById("rest1a").value;
-
-        if (parseInt(zahl1a) * 1000 + parseInt(zahl1b) * 100 +
+        
+        if (parseInt(zahl1a) * 1000 + parseInt(zahl1b) * 100 + 
         	parseInt(zahl1c) * 10 + parseInt(zahl1d)
         	== parseInt(zahl1e) * parseInt(ergebnis1a) + parseInt(rest1a))   {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe1a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe1a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
-
+    
+    
 function zufallszahl2a() {
 		document.getElementById("zufallszahl2a").innerHTML =
 		Math.floor(Math.random() * (9 - 1 + 1)) + 1;
 	}
-
+	
 	function zufallszahl2b() {
 		document.getElementById("zufallszahl2b").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+    
     function zufallszahl2c() {
 		document.getElementById("zufallszahl2c").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+	
 	function zufallszahl2d() {
 		document.getElementById("zufallszahl2d").innerHTML =
 		Math.floor(Math.random() * 10);
 	}
-
+	
 	function zufallszahl2e() {
 		document.getElementById("zufallszahl2e").innerHTML =
 		Math.floor(Math.random() * (9 - 3 + 1)) + 3;
 	}
-
+	
 	function rechne2a() {
     	var zahl2a = document.getElementById("zufallszahl2a").innerHTML;
         var zahl2b = document.getElementById("zufallszahl2b").innerHTML;
@@ -246,23 +247,23 @@ function zufallszahl2a() {
         var zahl2e = document.getElementById("zufallszahl2e").innerHTML;
         var ergebnis2a = document.getElementById("ergebnis2a").value;
         var rest2a = document.getElementById("rest2a").value;
-
-        if (parseInt(zahl2a) * 1000 + parseInt(zahl2b) * 100 +
+        
+        if (parseInt(zahl2a) * 1000 + parseInt(zahl2b) * 100 + 
         	parseInt(zahl2c) * 10 + parseInt(zahl2d)
         	== parseInt(zahl2e) * parseInt(ergebnis2a) + parseInt(rest2a))   {
-
+        
        	var text = 'Richtig!';
 	  		var ausgabe = document.getElementById('ausgabe2a');
 	  		ausgabe.innerHTML = text; }
-
+        
         else {
-
+        
         var text = 'Falsch!';
 	  		var ausgabe = document.getElementById('ausgabe2a');
 	  		ausgabe.innerHTML = text;
         }
     }
-
+    
 </script>
 
 </body>
