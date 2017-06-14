@@ -4,9 +4,16 @@ body {
 	color: #FFF;
 	max-width: 70em;
 	margin: 1em auto;
-	background-attachment:fixed;
+	background-attachment:scroll;
 	background-size:cover;
 	z-index:-1000;
+}
+
+#logostart {
+	display: block;
+	position: relative;
+	width: 40%;
+	height: 40%;
 }
 
 #Mathe {
@@ -82,6 +89,7 @@ nav {
 	float: top;
 	width: 1;
 	list-style-type: none;
+	
 }
 
 ol		{
@@ -212,7 +220,7 @@ article {
 	}
 
 footer {
-
+	
 	margin: .5em 0;
 	padding: .5em;
 }
