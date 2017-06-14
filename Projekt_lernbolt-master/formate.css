@@ -1,0 +1,267 @@
+body {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 1em;
+	color: #FFF;
+	max-width: 70em;
+	margin: 1em auto;
+	background-attachment:scroll;
+	background-size:cover;
+	z-index:-1000;
+}
+
+#logostart {
+	display: block;
+	position: relative;
+	width: 40%;
+	height: 40%;
+	margin: auto;
+}
+
+.start {
+	min-height: 1em;
+}
+
+#Mathe {
+		background:url("Mathematics Background.jpg");
+}
+
+#Start {
+		background:url("StartseiteBackground.jpeg") no-repeat top center;
+}
+
+#Musik {
+		background:url("Music Violine Background.jpg") no-repeat right top;
+}
+
+header {
+	position: relative;
+	padding: 2em;
+	padding-left: 2em;
+	z-index:1000;
+}
+
+#LB {
+	font-size:15em;
+}
+
+#StartH {
+	margin: .5em 0;
+	padding: .5em;
+	background-color:hsla(122, 100%, 25%, 0.7);
+	color:white;
+	height: 2em;
+}
+
+#StartN {
+	color:white;
+	display: inline;
+}
+
+/*allgemeines Design*/
+.aD {
+	background-color:hsla(122, 100%, 25%, 0.7);
+	color:white;
+}
+
+footer.a {
+	font-style:normal;
+
+}
+
+header img {
+	position: absolute;
+	top: -10px;
+	left: -25px;
+	z-index: 1;
+	/* 1/basic fontsize*pixel = em */
+
+	width: 11.8125em;
+	height: 11.375em;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+	margin: 0;
+}
+
+nav {
+	float: top;
+	width: 1;
+	list-style-type: none;
+	
+}
+
+ol		{
+	list-style-type: none;
+		}
+		
+nav ul{
+	text-align: center;
+	display: inline;
+	/*text-align: inline-block;*/
+}
+
+nav li {
+	display: inline;
+	text-align: inline-block;
+	min-width: 8em;
+	float: left;
+	list-style: none;
+}
+/* Unternavigation ausblenden */
+
+nav ul ul {
+	font: 0/0 serif;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 2em;
+}
+nav div {
+	text-decoration: none;
+	padding: .5em .4em;
+	margin-right:20em;
+}
+
+/*  Unternavigation einblenden */
+
+nav ul li:hover ul {
+	font: inherit;
+	background-color:black;
+}
+
+nav ul ul li {
+	display: block;
+	float: none;
+	margin-bottom: 0.2em;
+}
+
+main {
+	display: block;
+	/* noch fÃ¼r IE 8-11 nÃ¶tig */
+
+	margin: .5em 0;
+	margin-left: 0em;
+	padding: .1em .5em;
+	min-height: 50em;
+	
+	z-index:-1000;
+}
+
+table {
+	padding: 1%;
+	margin: auto;
+	text-align: right;
+	}
+
+table.musik {
+	border: 1px solid;
+	padding: 1%;
+	margin: 0;
+	}
+	
+div {
+	position:relative;
+}
+
+article{
+	padding-right:15em;
+	position:absolute;
+	/*background-color:hsla(122, 100%, 25%, 1);*/
+	background:url("blackboard.jpg") no-repeat center center;
+	width:50em;
+	height:47em;
+	z-index:-1;
+}
+
+.element1{
+      z-index:1;
+	  }
+
+.z-index{
+	z-index:-100;
+}
+	
+td.musik	{
+	border: 1px solid;
+	padding: 7px;
+	font-size: large;
+	}
+
+td	{
+	padding: 7px;
+	font-size: large;
+	}
+
+td.border1 {
+	border-bottom: solid;
+	}
+
+td.border2 {
+	border-bottom: double thick;
+	}
+
+input {
+       	text-align: right;
+       	font-size: small;
+       	}
+
+input:required {
+      color: red;
+    }
+
+input:required:valid {
+      color: green;
+    }
+
+article {
+	border-style: solid;
+	margin: 2%;
+	}
+
+footer {
+	
+	margin: .5em 0;
+	padding: .5em;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+	background-color:hsla(122, 100%, 25%, 0);
+}
+
+nav a, nav span {
+	display: block;
+	text-decoration: none;
+	padding: .5em .4em;
+	margin-right:1em;
+}
+
+nav a:focus {
+	background: #580E0E;
+	color: #BAB58C;
+}
+
+nav a:hover {
+	background: hsla(122, 100%, 25%, 0);
+	color: #AEFFAD;
+
+}
+
+nav a:active,
+a.active {
+	background: #580E0E;
+	color: #BAB58C;
+}
+
+footer span {
+	display: block;
+}
