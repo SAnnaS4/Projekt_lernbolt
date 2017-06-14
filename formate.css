@@ -17,6 +17,10 @@ body {
 	margin: auto;
 }
 
+.start {
+	min-height: 1em;
+}
+
 #Mathe {
 		background:url("Mathematics Background.jpg");
 }
@@ -146,6 +150,7 @@ main {
 	margin-left: 0em;
 	padding: .1em .5em;
 	min-height: 50em;
+	
 	z-index:-1000;
 }
 
