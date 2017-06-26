@@ -17,8 +17,8 @@ body {
 	margin: auto;
 }
 
-.start {
-	min-height: 1em;
+#logoback {
+	min-height: 0em;
 }
 
 #Mathe {
@@ -31,6 +31,15 @@ body {
 
 #Musik {
 		background:url("Music Violine Background.jpg") no-repeat right top;
+}
+
+.mathe {
+	padding-right:15em;
+	position:absolute;
+	background:url("blackboard.jpg") no-repeat center center;
+	width:50em;
+	height:47em;
+	color:white;
 }
 
 header {
@@ -47,8 +56,6 @@ header {
 #StartH {
 	margin: .5em 0;
 	padding: .5em;
-	background-color:hsla(122, 100%, 25%, 0.7);
-	color:white;
 	height: 2em;
 }
 
@@ -87,23 +94,26 @@ img {
 h1 {
 	text-align: center;
 	font-size: 3em;
-	margin: 0;
+	margin: 0.5em;
+	font-family: Cooper Black, Tahoma;
 }
 
 nav {
-	float: top;
+	/*float: top;*/
 	width: 1;
-	list-style-type: none;
-	
+	margin: 0 auto;
+	list-style: none;
+
 }
 
 ol		{
 	list-style-type: none;
 		}
-		
+
 nav ul{
 	text-align: center;
-	display: inline;
+	display: inline-block;
+	list-style-type: none;
 	/*text-align: inline-block;*/
 }
 
@@ -121,7 +131,7 @@ nav ul ul {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	top: 2em;
+	/*top: 2em;*/
 }
 nav div {
 	text-decoration: none;
@@ -133,7 +143,7 @@ nav div {
 
 nav ul li:hover ul {
 	font: inherit;
-	background-color:black;
+	background-color:rgba(0,0,0,0.5);
 }
 
 nav ul ul li {
@@ -150,7 +160,7 @@ main {
 	margin-left: 0em;
 	padding: .1em .5em;
 	min-height: 50em;
-	
+
 	z-index:-1000;
 }
 
@@ -165,7 +175,7 @@ table.musik {
 	padding: 1%;
 	margin: 0;
 	}
-	
+
 div {
 	position:relative;
 }
@@ -177,7 +187,7 @@ article{
 	background:url("blackboard.jpg") no-repeat center center;
 	width:50em;
 	height:47em;
-	z-index:-1;
+	/*z-index:-1;*/
 }
 
 .element1{
@@ -187,7 +197,7 @@ article{
 .z-index{
 	z-index:-100;
 }
-	
+
 td.musik	{
 	border: 1px solid;
 	padding: 7px;
@@ -226,7 +236,7 @@ article {
 	}
 
 footer {
-	
+
 	margin: .5em 0;
 	padding: .5em;
 }
@@ -240,6 +250,7 @@ a {
 
 nav a, nav span {
 	display: block;
+	text-align: center;
 	text-decoration: none;
 	padding: .5em .4em;
 	margin-right:1em;
@@ -258,7 +269,7 @@ nav a:hover {
 
 nav a:active,
 a.active {
-	background: #580E0E;
+	background: hsla(122, 100%, 25%, 0);
 	color: #BAB58C;
 }
 
