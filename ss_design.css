@@ -13,6 +13,11 @@
 
 }
 
+.mathe>h1 {
+	color:black;
+	font-size:2em;
+}
+
 .fixed-nav-bar .nav-start {
 	position: fixed;
   top: 1em;
@@ -78,6 +83,17 @@
 	text-align: right;
 }
 
+body {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 1em;
+	color: #FFF;
+	max-width: 70em;
+	margin: 1em auto;
+	background-attachment:scroll;
+	background-size:cover;
+	z-index:-1000;
+}
+
 #logostart {
 	display: block;
 	position: relative;
@@ -88,6 +104,12 @@
 
 #logoback {
 	min-height: 0em;
+}
+
+#Mathe {
+		background:url("Mathematics Background2.jpg") no-repeat top center;
+      background-attachment:scroll;
+      z-index: -9999;
 }
 
 #Start {
@@ -101,54 +123,38 @@
 		background:url("Music Violine Background2.jpg") no-repeat right top;
 		background-attachment:scroll;
 		background-size:cover; /*hintergrund ist nun starr*/
-    z-index: -9999;
-	}
-
-	#Mathe {
-			background:url("Mathematics Background2.jpg") no-repeat top center;
-			background-attachment:scroll;
-      z-index: -9999;
- /*hintergrund ist nun starr*/
-	}
-
-  .mathe {
-  	padding-right:5em;
-  	position:absolute;
-  	background:url("blackboard.jpg") no-repeat center center;
-  	width:50em;
-  	height:47em;
-  	color:white;
-    z-index: -1;
-  }
-
-/*#StartH {
-	margin: .5em 0;
-	padding: .5em;
-	height: 3em;	unnötig im header nav*/
+        z-index: -9999;
 }
 
-/*#StartN {
+.mathe {
+	padding-right:15em;
+	position:absolute;
+	width:50em;
+	height:47em;
 	color:white;
-	display: inline;
-} bringt keine Veränderung, nav startseite*/
+}
 
 header {
 	position: relative;
-	/*padding: 2em;
-	padding-left: 2em;*/
+	padding: 2em;
+	padding-left: 2em;
 	z-index:1000;
 }
 
-*{
-	font-family: Tahoma, Verdana, sans-serif;
-	color: #FFF;
-	font-size: 1em;
+/*#LB {
+	font-size:15em;
 }
 
-body {
-	font-size: 1em;
-	z-index:-1000;
+#StartH {
+	margin: .5em 0;
+	padding: .5em;
+	height: 2em;
 }
+
+#StartN {
+	color:white;
+	display: inline;
+}*/
 
 .content {
 	position: relative;
@@ -163,8 +169,6 @@ body {
 }
 
 .contentMathe {
-  position: relative;
-	/*display: inline;*/
 	top: 4em;
 	bottom: 4em;
 	max-width: 70em;
@@ -172,72 +176,14 @@ body {
 	padding: .1em .5em;
 } /*Maininhalt wird durch Klasse Mathe mit einer Tafel als Hintergrund versehen*/
 
-main {
-	display: block;
-	/* noch fÃ¼r IE 8-11 nÃ¶tig */
-
-	/*margin: .5em 0;
-	margin-left: 0em;
-	padding: .1em .5em; alte einstellung des mainfensters*/
-	min-height: 50em;
-
-	z-index:-1000;
-}
-
-div {
-	position:relative;
-} /*verwendet in Mathe*/
-
-/*article{
-	padding-right:15em;
-	position:absolute;
-
-	width:50em;
-	height:47em;
-	z-index:-1;
-}*/
-
 
 h1 {
 	text-align: center;
-	font-size: 2em;
+	font-size: 3em;
 	margin: 0.5em;
+	font-family: Cooper Black, Tahoma;
 }
 
-
-a {
-	text-decoration: none;
-	color: #FFF;
-	font-weight: bold;
-	background-color:hsla(122, 100%, 25%, 0);
-}
-
-nav {
-	/*float: top;*/
-	/*width: 1;
-	margin: 0 auto;*/
-	list-style: none;
-	/*background-attachment: fixed;*/
-}
-
-/*ol		{
-	list-style-type: none;
-		} keine Ahnung wo das sein soll*/
-
-nav ul{
-	/*text-align: center;*/
-	display: inline-block;
-	list-style-type: none;
-	/*text-align: inline-block;*/
-}
-
-nav ul li {
-	/*display: inline;*/
-	text-align: inline-block;
-	/*min-width: 8em;*/
-	float: left;
-	list-style: none;
-}
 /* Unternavigation ausblenden */
 
 nav ul li ul {
@@ -252,33 +198,17 @@ nav ul li ul {
 	max-width: 14em;
 	/*um die größe des Untermenüs einzuschränken*/
 }
-/*nav div {
-	text-decoration: none;
-	/*padding: .5em .4em;
-	margin-right:20em;
-} nicht in start*/
-
-/*  Unternavigation einblenden */
 
 nav ul li:hover ul, nav ul li:focus ul {
 	font: inherit;
   position: static;
 	background-color:rgba(0,0,0,0.5);
 }
-/*collapse navbar-collapse
-mynavbar
-nav navbar-nav
-active
-dropdown
-dropdown-toggle
-caret
-dropdown-menu*/
 
 nav ul ul li {
 	display: block;
 	float: none;
 	font-size: 0.7em;
-	/*margin-bottom: 0.2em;*/
 }
 
 nav a, nav span {
@@ -297,23 +227,78 @@ nav a:active, a.active, nav a:focus, footer a:focus {
 	color: #BAB58C;
 }
 
+table {
+	padding: 1%;
+	margin: auto;
+	text-align: right;
+	}
+
+table.musik {
+	border: 1px solid;
+	padding: 1%;
+	margin: 0;
+	}
+
+article{
+	padding-right:15em;
+	position:absolute;
+	/*background-color:hsla(122, 100%, 25%, 1);*/
+	background:url("blackboard.jpg") no-repeat center center;
+	width:50em;
+	height:47em;
+	/*z-index:-1;*/
+}
+
+.element1{
+      z-index:1;
+	  }
+
+.z-index{
+	z-index:-100;
+}
+
+td.musik	{
+	border: 1px solid;
+	padding: 7px;
+	font-size: large;
+	}
+
+td	{
+	padding: 7px;
+	font-size: large;
+	}
+
+td.border1 {
+	border-bottom: solid;
+	}
+
+td.border2 {
+	border-bottom: double thick;
+	}
+
+input {
+       	text-align: right;
+       	font-size: small;
+       	}
+
+article {
+	border-style: solid;
+	margin: 2%;
+	}
 
 footer {
+
+	margin: .5em 0;
 	padding: .5em;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+	background-color:hsla(122, 100%, 25%, 0);
 }
 
 footer span {
 	display: block;
-}
-
-footer.a {
-	font-style:normal;
-
-}
-
-button {
-  background-color: #006600;
-  color: white;
-  border-radius: 15%;
-  border-color: rgba(0, 0, 0, 0);
 }

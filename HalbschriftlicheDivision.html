@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="expires" content="0">
     <link rel="stylesheet" href="ss_design.css" type="text/css">
+		 <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+	 <script src="JSMathe.js" type="text/javascript"></script>
     <title>Mathebolt</title>
   </head>
 <body id="Mathe" onload="zufallszahl1(),
@@ -36,7 +38,7 @@
 
 <main class="contentMathe mathe">
   <h1> Halbschriftliche Division </h1>
-<article>
+<article class='element1' id='HD1'>
 <table>
 	<tr>
 		<td id="zufallszahl1a" class="border1"></td>
@@ -68,9 +70,10 @@
 		<td><input size="3"></td>
 	</tr>
 </table>
+<button onclick="myFunction('HD1','HD2')">weiter</button>
 </article>
 
-<article>
+<article id='HD2'>
 <table>
 	<tr>
 		<td id="zufallszahl2a" class="border1"></td>
@@ -102,9 +105,11 @@
 		<td><input size="3"></td>
 	</tr>
 </table>
+<button onclick="myFunctionZ('HD1','HD2')">zurueck</button>
+<button onclick="myFunction('HD2','HD3')">weiter</button>
 </article>
 
-<article>
+<article id='HD3'>
 <table>
 	<tr>
 		<td id="zufallszahl3a" class="border1"></td>
@@ -143,9 +148,11 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
+<button onclick="myFunctionZ('HD2','HD3')">zurueck</button>
+<button onclick="myFunction('HD3','HD4')">weiter</button>
 </article>
 
-<article>
+<article id='HD4'>
 <table>
 	<tr>
 		<td id="zufallszahl4a" class="border1"></td>
@@ -184,9 +191,11 @@
 		<td><input size="4"></td>
 	</tr>
 </table>
+<button onclick="myFunctionZ('HD3','HD4')">zurueck</button>
+<button onclick="myFunction('HD4','HD5')">weiter</button>
 </article>
 
-<article>
+<article id='HD5'>
 <table>
 	<tr>
 		<td id="zufallszahl5a" class="border1"></td>
@@ -232,6 +241,7 @@
 		<td><input size="5"></td>
 	</tr>
 </table>
+<button onclick="myFunctionZ('HD4','HD5')">zurueck</button>
 </article>
 </main>
 
