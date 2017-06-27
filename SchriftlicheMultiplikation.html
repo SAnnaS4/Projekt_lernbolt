@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" href="ss_design.css" type="text/css">
+	<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+	 <script src="JSMathe.js" type="text/javascript"></script>
+    <title>Mathebolt</title>
+  </head>
+<body id="Mathe" onload="zufallszahl1a(),
+				zufallszahl1b(),
+				zufallszahl1c(),
+				zufallszahl1d(),
+				zufallszahl1e(),
+				zufallszahl1f(),
+				zufallszahl2a(),
+				zufallszahl2b(),
+				zufallszahl2c(),
+				zufallszahl2d(),
+				zufallszahl2e(),
+				zufallszahl2f()">
+
+<header>
+
+  <nav class="fixed-nav-bar">
+    <a href="Startseite.html">
+      <img src="logoohneschrift3.png" alt="Logo"class="logo-nav"/></a>
+    <ul>
+        <li class="nav-start"> <a href="Startseite.html"> Startseite </a><li>
+        <li class="nav-mu"> <a href="musik.html"> Musik </a> </li>
+        <li class="nav-ma"> <a href="mathe.html"> Mathe </a>
+          <ul>
+                 <li> <a href="Plusaufgaben_bis_10.html"> Zahlenraum bis 10 - Plusaufgaben </a> </li>
+                 <li> <a href="HalbhandschriftlicheMultiplikation.html"> Halbschriftliche Multiplikation </a> </li>
+                 <li>  <a href="SchriftlicheMultiplikation.html"> Schriftliche Multiplikation </a> </li>
+                 <li> <a href="HalbschriftlicheDivision.html"> Halbschriftliche Division </a> </li>
+                 <li> <a href="Schriftliche_Division_mit_Rest.html"> Schriftliche Division mit Rest </a> </li>
+                 <li> <a href="KleinesEinmaleins.html"> Das kleine Einmaleins</a></li>
+         </ul>
+       </li>
+   </ul>
+ </nav>
+</header>
+
+<main class="mathe contentMathe">
+  <h1>Schriftliche Multiplikation</h1>
+<article>
+<table>
+	<tr>
+		<td></td>
+    	<td id="zufallszahl1a" class="border1"> </td>
+    	<td id="zufallszahl1b" class="border1"> </td>
+    	<td id="zufallszahl1c" class="border1"> </td>
+    	<td class="border1"> * </td>
+    	<td id="zufallszahl1d" class="border1"> </td>
+    	<td id="zufallszahl1e" class="border1"> </td>
+    	<td id="zufallszahl1f" class="border1"> </td>
+    	<td> = <td>
+    	<input size="8" id="ergebnis1a" value="">
+    	<td><button onclick="rechne1a()" id="ausgabe1a">Pr&uuml;fe!</button></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    </tr>
+    <tr>
+    	<td> + </td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    </tr>
+    <tr>
+    	<td> + </td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    </tr>
+</table>
+</article>
+
+<article>
+<table>
+	<tr>
+		<td></td>
+    	<td id="zufallszahl2a" class="border1"> </td>
+    	<td id="zufallszahl2b" class="border1"> </td>
+    	<td id="zufallszahl2c" class="border1"> </td>
+    	<td class="border1"> * </td>
+    	<td id="zufallszahl2d" class="border1"> </td>
+    	<td id="zufallszahl2e" class="border1"> </td>
+    	<td id="zufallszahl2f" class="border1"> </td>
+    	<td> = <td>
+    	<input size="8" id="ergebnis2a" value="">
+    	<td><button onclick="rechne2a()" id="ausgabe2a">Pr&uuml;fe!</button></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    </tr>
+    <tr>
+    	<td> + </td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    	<td><input size="2"></td>
+    </tr>
+    <tr>
+    	<td> + </td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    	<td class="border1"><input size="2"></td>
+    </tr>
+     <tr>
+    	<td></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    	<td class="border2"><input size="2"></td>
+    </tr>
+</table>
+</article>
+</main>
+
+  	<footer class="fixed-footer">
+        <a href="Impressum.html">Impressum & Haftungshinweis</a>
+  	</footer>
+
+<script>
+
+function zufallszahl1a() {
+		document.getElementById("zufallszahl1a").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+	function zufallszahl1b() {
+		document.getElementById("zufallszahl1b").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+    function zufallszahl1c() {
+		document.getElementById("zufallszahl1c").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+	function zufallszahl1d() {
+		document.getElementById("zufallszahl1d").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+	function zufallszahl1e() {
+		document.getElementById("zufallszahl1e").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+	function zufallszahl1f() {
+		document.getElementById("zufallszahl1f").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+	function rechne1a() {
+    	var zahl1a = document.getElementById("zufallszahl1a").innerHTML;
+        var zahl1b = document.getElementById("zufallszahl1b").innerHTML;
+        var zahl1c = document.getElementById("zufallszahl1c").innerHTML;
+        var zahl1d = document.getElementById("zufallszahl1d").innerHTML;
+        var zahl1e = document.getElementById("zufallszahl1e").innerHTML;
+        var zahl1f = document.getElementById("zufallszahl1f").innerHTML;
+        var ergebnis1a = document.getElementById("ergebnis1a").value;
+
+        if ((parseInt(zahl1a) * 100 + parseInt(zahl1b) * 10 +
+        	parseInt(zahl1c)) * (parseInt(zahl1d) * 100 +
+        	parseInt(zahl1e) * 10 + parseInt(zahl1f))
+        	== parseInt(ergebnis1a))   {
+
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe1a');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var text = 'Falsch!';
+	  		var ausgabe = document.getElementById('ausgabe1a');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+
+    function zufallszahl2a() {
+		document.getElementById("zufallszahl2a").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+	function zufallszahl2b() {
+		document.getElementById("zufallszahl2b").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+    function zufallszahl2c() {
+		document.getElementById("zufallszahl2c").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+	function zufallszahl2d() {
+		document.getElementById("zufallszahl2d").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+	function zufallszahl2e() {
+		document.getElementById("zufallszahl2e").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+	function zufallszahl2f() {
+		document.getElementById("zufallszahl2f").innerHTML =
+		Math.floor(Math.random() * 10);
+	}
+
+	function rechne2a() {
+    	var zahl2a = document.getElementById("zufallszahl2a").innerHTML;
+        var zahl2b = document.getElementById("zufallszahl2b").innerHTML;
+        var zahl2c = document.getElementById("zufallszahl2c").innerHTML;
+        var zahl2d = document.getElementById("zufallszahl2d").innerHTML;
+        var zahl2e = document.getElementById("zufallszahl2e").innerHTML;
+        var zahl2f = document.getElementById("zufallszahl2f").innerHTML;
+        var ergebnis2a = document.getElementById("ergebnis2a").value;
+
+        if ((parseInt(zahl2a) * 100 + parseInt(zahl2b) * 10 +
+        	parseInt(zahl2c)) * (parseInt(zahl2d) * 100 +
+        	parseInt(zahl2e) * 10 + parseInt(zahl2f))
+        	== parseInt(ergebnis1a))   {
+
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe2a');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var text = 'Falsch!';
+	  		var ausgabe = document.getElementById('ausgabe2a');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+</script>
+
+</body>
+</html>

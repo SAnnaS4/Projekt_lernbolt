@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" href="ss_design.css" type="text/css">
+		 <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+	 <script src="JSMathe.js" type="text/javascript"></script>
+    <title>Mathebolt</title>
+  </head>
+<body id="Mathe" onload="zufallszahl1a(),
+				zufallszahl1b(),
+				zufallszahl1c(),
+				zufallszahl1d(),
+				zufallszahl1e(),
+				zufallszahl1f(),
+				zufallszahl1g(),
+				zufallszahl1h(),
+				zufallszahl2a(),
+				zufallszahl2b(),
+				zufallszahl2c(),
+				zufallszahl2d(),
+				zufallszahl2e(),
+				zufallszahl2f(),
+				zufallszahl2g(),
+				zufallszahl2h(),
+				zufallszahl3a(),
+				zufallszahl3b(),
+				zufallszahl3c(),
+				zufallszahl3d(),
+				zufallszahl3e(),
+				zufallszahl3f(),
+				zufallszahl3g(),
+				zufallszahl3h()">
+
+<header>
+  <nav class="fixed-nav-bar">
+    <a href="Startseite.html">
+      <img src="logoohneschrift3.png" alt="Logo"class="logo-nav"/></a>
+    <ul>
+        <li class="nav-start"> <a href="Startseite.html"> Startseite </a><li>
+        <li class="nav-mu"> <a href="musik.html"> Musik </a> </li>
+        <li class="nav-ma"> <a href="mathe.html"> Mathe </a>
+          <ul>
+                 <li> <a href="Plusaufgaben_bis_10.html"> Zahlenraum bis 10 - Plusaufgaben </a> </li>
+                 <li> <a href="HalbhandschriftlicheMultiplikation.html"> Halbschriftliche Multiplikation </a> </li>
+                 <li>  <a href="SchriftlicheMultiplikation.html"> Schriftliche Multiplikation </a> </li>
+                 <li> <a href="HalbschriftlicheDivision.html"> Halbschriftliche Division </a> </li>
+                 <li> <a href="Schriftliche_Division_mit_Rest.html"> Schriftliche Division mit Rest </a> </li>
+                 <li> <a href="KleinesEinmaleins.html"> Das kleine Einmaleins</a></li>
+         </ul>
+       </li>
+   </ul>
+  </nav>
+</header>
+
+<main class="mathe contentMathe">
+<h1>Plusaufgaben bis 10</h1>
+<article>
+<table>
+	<tr>
+    	<td id="zufallszahl1a"> </td>
+        <td> + </td>
+        <td id="zufallszahl1b"> </td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis1a" value=""></td>
+        <td><button onclick="rechne1a()" id="ausgabe1a">Pr&uuml;fe!</button></td>
+        <td>
+    </tr>
+    <tr>
+    	<td id="zufallszahl1c"></td>
+        <td> + </td>
+        <td id="zufallszahl1d"></td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis1b" value=""></td>
+        <td><button onclick="rechne1b()" id="ausgabe1b">Pr&uuml;fe!</button></td>
+    </tr>
+     <tr>
+    	<td id="zufallszahl1e"></td>
+        <td> + </td>
+        <td id="zufallszahl1f"></td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis1c" value=""></td>
+        <td><button onclick="rechne1c()" id="ausgabe1c">Pr&uuml;fe!</button>
+    </tr>
+    <tr>
+    	<td id="zufallszahl1g"></td>
+        <td> + </td>
+        <td id="zufallszahl1h"></td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis1d" value=""></td>
+        <td><button onclick="rechne1d()" id="ausgabe1d">Pr&uuml;fe!</button></td>
+    </tr>
+</table>
+</article>
+
+<article>
+<table>
+	<tr>
+    	<td id="zufallszahl2a"> </td>
+        <td> + </td>
+        <td id="zufallszahl2b"> </td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis2a" value=""></td>
+        <td><button onclick="rechne2a()" id="ausgabe2a">Pr&uuml;fe!</button></td>
+        <td>
+    </tr>
+    <tr>
+    	<td id="zufallszahl2c"></td>
+        <td> + </td>
+        <td id="zufallszahl2d"></td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis2b" value=""></td>
+        <td><button onclick="rechne2b()" id="ausgabe2b">Pr&uuml;fe!</button></td>
+    </tr>
+     <tr>
+    	<td id="zufallszahl2e"></td>
+        <td> + </td>
+        <td id="zufallszahl2f"></td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis2c" value=""></td>
+        <td><button onclick="rechne2c()" id="ausgabe2c">Pr&uuml;fe!</button>
+    </tr>
+    <tr>
+    	<td id="zufallszahl2g"></td>
+        <td> + </td>
+        <td id="zufallszahl2h"></td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis2d" value=""></td>
+        <td><button onclick="rechne2d()" id="ausgabe2d">Pr&uuml;fe!</button></td>
+    </tr>
+</table>
+</article>
+
+<article>
+<table>
+	<tr>
+    	<td id="zufallszahl3a"> </td>
+        <td> + </td>
+        <td id="zufallszahl3b"> </td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis3a" value=""></td>
+        <td><button onclick="rechne3a()" id="ausgabe3a">Pr&uuml;fe!</button></td>
+        <td>
+    </tr>
+    <tr>
+    	<td id="zufallszahl3c"></td>
+        <td> + </td>
+        <td id="zufallszahl3d"></td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis3b" value=""></td>
+        <td><button onclick="rechne3b()" id="ausgabe3b">Pr&uuml;fe!</button></td>
+    </tr>
+     <tr>
+    	<td id="zufallszahl3e"></td>
+        <td> + </td>
+        <td id="zufallszahl3f"></td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis3c" value=""></td>
+        <td><button onclick="rechne3c()" id="ausgabe3c">Pr&uuml;fe!</button>
+    </tr>
+    <tr>
+    	<td id="zufallszahl3g"></td>
+        <td> + </td>
+        <td id="zufallszahl3h"></td>
+        <td> = </td>
+        <td><input size="4" id="ergebnis3d" value=""></td>
+        <td><button onclick="rechne3d()" id="ausgabe3d">Pr&uuml;fe!</button></td>
+    </tr>
+</table>
+</article>
+</main>
+
+  	<footer class="fixed-footer">
+        <a href="Impressum.html">Impressum & Haftungshinweis</a>
+  	</footer>
+
+<script>
+
+	function zufallszahl1a() {
+		document.getElementById("zufallszahl1a").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl1b() {
+		document.getElementById("zufallszahl1b").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne1a() {
+    	var zahl1a = document.getElementById("zufallszahl1a").innerHTML;
+        var zahl1b = document.getElementById("zufallszahl1b").innerHTML;
+        var ergebnis1a = document.getElementById("ergebnis1a").value;
+
+        if (parseInt(zahl1a) + parseInt(zahl1b) == parseInt(ergebnis1a)) {
+
+        var x = document.getElementById('ausgabe1a');
+    	x.style.background = "green";
+
+        var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe1a');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe1a');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe1a');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+    function zufallszahl1c() {
+		document.getElementById("zufallszahl1c").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl1d() {
+		document.getElementById("zufallszahl1d").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne1b() {
+    	var zahl1c = document.getElementById("zufallszahl1c").innerHTML;
+        var zahl1d = document.getElementById("zufallszahl1d").innerHTML;
+        var ergebnis1b = document.getElementById("ergebnis1b").value;
+
+        if (parseInt(zahl1c) + parseInt(zahl1d) == parseInt(ergebnis1b)) {
+
+        var x = document.getElementById('ausgabe1b');
+    	x.style.background = "green";
+
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe1b');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe1b');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe1b');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+
+    function zufallszahl1e() {
+		document.getElementById("zufallszahl1e").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl1f() {
+		document.getElementById("zufallszahl1f").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne1c() {
+    	var zahl1e = document.getElementById("zufallszahl1e").innerHTML;
+        var zahl1f = document.getElementById("zufallszahl1f").innerHTML;
+        var ergebnis1c = document.getElementById("ergebnis1c").value;
+
+        if (parseInt(zahl1e) + parseInt(zahl1f) == parseInt(ergebnis1c)) {
+
+        var x = document.getElementById('ausgabe1c');
+    	x.style.background = "green";
+
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe1c');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe1c');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe1c');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+
+    function zufallszahl1g() {
+		document.getElementById("zufallszahl1g").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl1h() {
+		document.getElementById("zufallszahl1h").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne1d() {
+    	var zahl1g = document.getElementById("zufallszahl1g").innerHTML;
+        var zahl1h = document.getElementById("zufallszahl1h").innerHTML;
+        var ergebnis1d = document.getElementById("ergebnis1d").value;
+
+        if (parseInt(zahl1g) + parseInt(zahl1h) == parseInt(ergebnis1d)) {
+
+        var x = document.getElementById('ausgabe1d');
+    	x.style.background = "green";
+
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe1d');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe1d');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe1d');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+
+    function zufallszahl2a() {
+		document.getElementById("zufallszahl2a").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl2b() {
+		document.getElementById("zufallszahl2b").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne2a() {
+    	var zahl2a = document.getElementById("zufallszahl2a").innerHTML;
+        var zahl2b = document.getElementById("zufallszahl2b").innerHTML;
+        var ergebnis2a = document.getElementById("ergebnis2a").value;
+
+        if (parseInt(zahl2a) + parseInt(zahl2b) == parseInt(ergebnis2a)) {
+
+        var x = document.getElementById('ausgabe2a');
+    	x.style.background = "green";
+
+        var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe2a');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe2a');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe2a');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+    function zufallszahl2c() {
+		document.getElementById("zufallszahl2c").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl2d() {
+		document.getElementById("zufallszahl2d").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne2b() {
+    	var zahl2c = document.getElementById("zufallszahl2c").innerHTML;
+        var zahl2d = document.getElementById("zufallszahl2d").innerHTML;
+        var ergebnis2b = document.getElementById("ergebnis2b").value;
+
+        if (parseInt(zahl2c) + parseInt(zahl2d) == parseInt(ergebnis2b)) {
+
+        var x = document.getElementById('ausgabe2b');
+    	x.style.background = "green";
+
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe2b');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe2b');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe2b');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+
+    function zufallszahl2e() {
+		document.getElementById("zufallszahl2e").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl2f() {
+		document.getElementById("zufallszahl2f").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne2c() {
+    	var zahl2e = document.getElementById("zufallszahl2e").innerHTML;
+        var zahl2f = document.getElementById("zufallszahl2f").innerHTML;
+        var ergebnis2c = document.getElementById("ergebnis2c").value;
+
+        if (parseInt(zahl2e) + parseInt(zahl2f) == parseInt(ergebnis2c)) {
+
+        var x = document.getElementById('ausgabe2c');
+    	x.style.background = "green";
+
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe2c');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe2c');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe2c');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+
+    function zufallszahl2g() {
+		document.getElementById("zufallszahl2g").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl2h() {
+		document.getElementById("zufallszahl2h").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne2d() {
+    	var zahl2g = document.getElementById("zufallszahl2g").innerHTML;
+        var zahl2h = document.getElementById("zufallszahl2h").innerHTML;
+        var ergebnis2d = document.getElementById("ergebnis2d").value;
+
+        if (parseInt(zahl2g) + parseInt(zahl2h) == parseInt(ergebnis2d)) {
+
+        var x = document.getElementById('ausgabe2d');
+    	x.style.background = "green";
+
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe2d');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe2d');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe2d');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+
+    function zufallszahl3a() {
+		document.getElementById("zufallszahl3a").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl3b() {
+		document.getElementById("zufallszahl3b").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne3a() {
+    	var zahl3a = document.getElementById("zufallszahl3a").innerHTML;
+        var zahl3b = document.getElementById("zufallszahl3b").innerHTML;
+        var ergebnis3a = document.getElementById("ergebnis3a").value;
+
+        if (parseInt(zahl3a) + parseInt(zahl3b) == parseInt(ergebnis3a)) {
+
+        var x = document.getElementById('ausgabe3a');
+    	x.style.background = "green";
+
+        var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe3a');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe3a');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe3a');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+    function zufallszahl3c() {
+		document.getElementById("zufallszahl3c").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl3d() {
+		document.getElementById("zufallszahl3d").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne3b() {
+    	var zahl3c = document.getElementById("zufallszahl3c").innerHTML;
+        var zahl3d = document.getElementById("zufallszahl3d").innerHTML;
+        var ergebnis3b = document.getElementById("ergebnis3b").value;
+
+        if (parseInt(zahl3c) + parseInt(zahl3d) == parseInt(ergebnis3b)) {
+
+        var x = document.getElementById('ausgabe3b');
+    	x.style.background = "green";
+
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe3b');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe3b');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe3b');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+
+    function zufallszahl3e() {
+		document.getElementById("zufallszahl3e").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl3f() {
+		document.getElementById("zufallszahl3f").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne3c() {
+    	var zahl3e = document.getElementById("zufallszahl3e").innerHTML;
+        var zahl3f = document.getElementById("zufallszahl3f").innerHTML;
+        var ergebnis3c = document.getElementById("ergebnis3c").value;
+
+        if (parseInt(zahl3e) + parseInt(zahl3f) == parseInt(ergebnis3c)) {
+
+        var x = document.getElementById('ausgabe3c');
+    	x.style.background = "green";
+
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe3c');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe3c');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe3c');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+
+    function zufallszahl3g() {
+		document.getElementById("zufallszahl3g").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+    function zufallszahl3h() {
+		document.getElementById("zufallszahl3h").innerHTML =
+		Math.floor(Math.random() * 6);
+	}
+
+   	function rechne3d() {
+    	var zahl3g = document.getElementById("zufallszahl3g").innerHTML;
+        var zahl3h = document.getElementById("zufallszahl3h").innerHTML;
+        var ergebnis3d = document.getElementById("ergebnis3d").value;
+
+        if (parseInt(zahl3g) + parseInt(zahl3h) == parseInt(ergebnis3d)) {
+
+        var x = document.getElementById('ausgabe3d');
+    	x.style.background = "green";
+
+       	var text = 'Richtig!';
+	  		var ausgabe = document.getElementById('ausgabe3d');
+	  		ausgabe.innerHTML = text; }
+
+        else {
+
+        var x = document.getElementById('ausgabe3d');
+    	x.style.background = "red";
+
+        var text = 'Nochmal!';
+	  		var ausgabe = document.getElementById('ausgabe3d');
+	  		ausgabe.innerHTML = text;
+        }
+    }
+
+</script>
+
+</body>
+</html>
